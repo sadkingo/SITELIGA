@@ -47,22 +47,22 @@
 				</div>
 				<script>
 					function toggleLanguage() {
-						var langToggle = document.getElementById("language-toggle");
-						var langDisplay = document.querySelectorAll('.on, .off');
-					
+						var langToggle = document.getElementById('language-toggle')
+						var langDisplay = document.querySelectorAll('.on, .off')
+
 						if (langToggle.checked) {
 							// Если переключатель включен, показываем текст на русском
-							langDisplay.forEach(function(element) {
-								element.style.display = 'inline-block';
-							});
+							langDisplay.forEach(function (element) {
+								element.style.display = 'inline-block'
+							})
 						} else {
 							// Если переключатель выключен, показываем текст на английском
-							langDisplay.forEach(function(element) {
-								element.style.display = 'none';
-							});
+							langDisplay.forEach(function (element) {
+								element.style.display = 'none'
+							})
 						}
 					}
-					</script>
+				</script>
 				<ul class="nav__menu">
 					<li><a data-i18n="home" href="index.html">Home</a></li>
 					<li><a data-i18n="about" href="about.html">About</a></li>
@@ -83,12 +83,6 @@
 				</div>
 
 				<div class="about__achievements-right">
-					<h1 data-i18n="achievements">Acheivements</h1>
-					<p data-i18n="paragraph_desc">
-						We have been on the market for over 5 years and have over 20
-						different products and 300 satisfied customers. Also, we have awards
-						to prove our expertise.
-					</p>
 					<div class="achievements__cards">
 						<article class="achievement__card">
 							<span class="achievement__icon">
