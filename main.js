@@ -120,6 +120,15 @@ var translations = {
         "en": "Awards",
         "ru": "Наград"
     },
+    "article_desc": {
+        
+        "en": "We are a software development company. We develop adaptive front-end applications and web pages. Also, what sets us apart from our competitors is that we bring clients into business and tell them about the latest trends. Here are our values.",
+        "ru": "Мы — компания по разработке программного обеспечения. Мы разрабатываем адаптивные интерфейсные приложения и веб-страницы. Кроме того, что отличает нас от наших конкурентов, так это то, что мы привлекаем клиентов в бизнес и рассказываем им о последних тенденциях. Вот наши ценности."
+    },
+    "contact_us": {
+        "en": "Contact Us",
+        "ru": "Написать нам"
+    },
 
     // Добавьте другие переводы здесь
 };
