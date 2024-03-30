@@ -34,6 +34,20 @@
 				background-image: url('./images/bg-texture.png');
 			}
 		</style>
+		<style>
+			.scrollable {
+				width: 50%;
+				height: 600px;
+				overflow-y: auto;
+				overflow-x: hidden;
+				border: 1px solid #280258;
+				padding: 10px;
+				margin: 0 auto;
+				margin-bottom: 100px;
+				font-size: 15px;
+				margin-right: 80px;
+			}
+		</style>
 	</head>
 	<body>
 		<nav>
@@ -53,22 +67,22 @@
 				</div>
 				<script>
 					function toggleLanguage() {
-						var langToggle = document.getElementById("language-toggle");
-						var langDisplay = document.querySelectorAll('.on, .off');
-					
+						var langToggle = document.getElementById('language-toggle')
+						var langDisplay = document.querySelectorAll('.on, .off')
+
 						if (langToggle.checked) {
 							// Если переключатель включен, показываем текст на русском
-							langDisplay.forEach(function(element) {
-								element.style.display = 'inline-block';
-							});
+							langDisplay.forEach(function (element) {
+								element.style.display = 'inline-block'
+							})
 						} else {
 							// Если переключатель выключен, показываем текст на английском
-							langDisplay.forEach(function(element) {
-								element.style.display = 'none';
-							});
+							langDisplay.forEach(function (element) {
+								element.style.display = 'none'
+							})
 						}
 					}
-					</script>
+				</script>
 				<ul class="nav__menu">
 					<li><a data-i18n="home" href="index.html">Home</a></li>
 					<li><a data-i18n="about" href="about.html">About</a></li>
@@ -83,11 +97,18 @@
 		<header>
 			<div class="container header__container">
 				<div class="header__left">
-					<h1 data-i18n="header.title">We are dedicated to your success and are always ready to help.</h1>
+					<h1 data-i18n="header.title">
+						We are dedicated to your success and are always ready to help.
+					</h1>
 					<p data-i18n="paragraph.p">
 						We don't just make websites, we bring customers into the business
 					</p>
-					<a data-i18n="button_get_started" href="contact.html" class="btn btn-primary">DISCUSS THE PROJECT</a>
+					<a
+						data-i18n="button_get_started"
+						href="contact.html"
+						class="btn btn-primary"
+						>DISCUSS THE PROJECT</a
+					>
 				</div>
 
 				<div class="header__right">
@@ -106,9 +127,14 @@
 				<div class="categories__left">
 					<h1 data-i18n="categories.title">What we're doing</h1>
 					<p data-i18n="article_desc">
-						We are a software development company. We develop adaptive front-end applications and web pages. Also, what sets us apart from our competitors is that we bring clients into business and tell them about the latest trends. Here are our values.
+						We are a software development company. We develop adaptive front-end
+						applications and web pages. Also, what sets us apart from our
+						competitors is that we bring clients into business and tell them
+						about the latest trends. Here are our values.
 					</p>
-					<a data-i18n="contact_us" href="courses.html" class="btn">Contact Us</a>
+					<a data-i18n="contact_us" href="contact.html" class="btn"
+						>CONTACT US</a
+					>
 				</div>
 
 				<div class="categories__right">
@@ -165,47 +191,21 @@
 		<!--====================== END OF CATEGORIES =====================-->
 
 		<section class="courses">
-			<h2>Our Popular Products</h2>
+			<h2 data-i18n="portfolio">PORTFOLIO</h2>
 			<div class="container courses__container">
 				<article class="course">
 					<div class="course__image">
-						<img src="./images/course1.jpg" />
+						<img src="./images/liqour-shop.png" />
 					</div>
 					<div class="course__info">
-						<h4>Responsive Social Media Website UI Design</h4>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-							aperiam deserunt eaque quos iure ad debitis.
-						</p>
-						<a href="contact.html" class="btn btn-primary">Learn More</a>
-					</div>
-				</article>
-
-				<article class="course">
-					<div class="course__image">
-						<img src="./images/course2.jpg" />
-					</div>
-					<div class="course__info">
-						<h4>Responsive SmartHome Website Design</h4>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-							aperiam deserunt eaque quos iure ad debitis.
-						</p>
-						<a href="contact.html" class="btn btn-primary">Learn More</a>
-					</div>
-				</article>
-
-				<article class="course">
-					<div class="course__image">
-						<img src="./images/course3.jpg" />
-					</div>
-					<div class="course__info">
-						<h4>Responsive Admin Dashboard UI Design</h4>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-							aperiam deserunt eaque quos iure ad debitis.
-						</p>
-						<a href="contact.html" class="btn btn-primary">Learn More</a>
+						<h4>Liquor Shop</h4>
+						<p>Online grocery store</p>
+						<a
+							data-i18n="check_it_out"
+							href="https://liquor-shop-three.vercel.app/"
+							class="btn btn-primary"
+							>Check it out</a
+						>
 					</div>
 				</article>
 			</div>
@@ -215,33 +215,126 @@
 
 		<!--====================== END OF TESTIMONIALS =====================-->
 
+		<div class="scrollable">
+			<h1>Создание сайтов в Чехии</h1>
+			<p>
+				Создание сайтов — комплексный процесс, при выполнении которого
+				задействуется множество IT-специалистов разного профиля. Сегодня нет
+				практически ни одной компании, которая не «вывела» бы свой бизнес в
+				онлайн. Разработка и запуск веб-ресурса проводится в несколько этапов.
+				Только тщательная подготовка позволяет реализовать проект, который будет
+				приносить бизнесу результат. Поэтому к выбору подрядчика нужно отнестись
+				ответственно.
+			</p>
+			<p>
+				Наша веб-студия в Киеве MEGASITE разрабатывает лендинги, площадки
+				электронной коммерции, корпоративные ресурсы под ключ для разных ниш
+				бизнеса и любого уровня сложности.
+			</p>
+
+			<h2>Виды сайтов</h2>
+			<ul>
+				<li>
+					визитка — сайт подходит для представителей малого бизнеса, которые
+					хотят познакомить потенциальных клиентов со своей компанией. Как
+					правило, такой ресурс содержит 3-5 страниц и дает общее представление
+					об услугах и товарах;
+				</li>
+				<li>
+					корпоративный — многостраничный сайт, который детально рассказывает о
+					товарах/услугах бизнеса, при этом имеет расширенный функционал и
+					возможности. Также может предназначаться для внутреннего использования
+					сотрудниками;
+				</li>
+				<li>
+					интернет-магазин — торговая площадка, позволяющая предлагать товар или
+					услугу большему числу заказчиков. Могут подключаться платежные
+					инструменты, предусматривается возможность создания личных кабинетов и
+					другие полезные функции;
+				</li>
+				<li>
+					лендинг — одностраничник, созданный в рекламных целях. Он позволяет
+					увеличить конверсию через призыв сделать какое-то конкретное действие,
+					необходимое бизнесу;
+				</li>
+				<li>
+					онлайн-сервисы — площадки, предоставляющие услуги (регистрация,
+					покупка билетов, онлайн запись и так далее).
+				</li>
+			</ul>
+			<p>
+				Если вас интересует разработка сайтов в Чехии, обратитесь в нашу
+				IT-компанию. Мы поможем решить IT-задачи любой сложности.
+			</p>
+
+			<h2>Создание сайта под ключ</h2>
+			<p>
+				Создание сайтов под ключ — это услуга по полному циклу разработки сайта,
+				начиная от исследования рынка и проектирования ресурса до запуска
+				проекта и его последующего ведения, настройки рекламы, SEO и т.д. При
+				этом продвижение не всегда входит в цену заказа.
+			</p>
+			<p>Разработка WEB-сайта включает в себя выполнение следующих действий:</p>
+			<ol>
+				<li>
+					анализ рынка и решений конкурентов, изучение бизнеса клиента и
+					исследование целевой аудитории, которая будет пользоваться ресурсом;
+				</li>
+				<li>
+					планирование и детальная проработка структуры проекта на основе
+					полученных данных;
+				</li>
+				<li>создание прототипа проекта, его обсуждение и утверждение;</li>
+				<li>отрисовка дизайна;</li>
+				<li>верстка и программирование;</li>
+				<li>тестирование;</li>
+				<li>оптимизация и наполнение контентом;</li>
+				<li>финишные настройки и сдача.</li>
+			</ol>
+			<p>
+				Это основные этапы, которые выполняет наша компания при создании сайта.
+				Но при желании клиент может заказать настройку рекламы, продвижение и
+				так далее. Также при сдаче проекта мы обучаем сотрудников клиента
+				пользоваться интерфейсом и выполнять администрирование сайта.
+			</p>
+
+			<h2>Что влияет на стоимость создания сайта</h2>
+			<p>
+				Чаще всего перед тем, как заказать создание сайта, клиентов интересует,
+				сколько будет стоить эта услуга. Узнать цену можно после беседы с
+				менеджером. Бюджет проекта способен меняться из-за множества факторов:
+			</p>
+			<ul>
+				<li>тип сайта, который интересует заказчика;</li>
+				<li>предположительное количество страниц;</li>
+				<li>желаемый набор функций;</li>
+				<li>время для проработки проекта;</li>
+				<li>
+					количество и квалификация специалистов, задействованных при
+					разработке.
+				</li>
+			</ul>
+			<p>
+				В среднем создание сайта требует 1—4 месяца. В зависимости от целей
+				проекта, мы применяем как шаблонные, так и кастомные решения. Например,
+				дизайн может быть стандартным, а функционал разрабатывается специально
+				для этого веб-ресурса.
+			</p>
+
+			<h2>Почему создание сайта лучше доверить команде SITELIGA</h2>
+			<p>
+				Наша ИТ-компания имеет большой опыт в создании и продвижении
+				веб-ресурсов разной сложности. Мы учитываем требования заказчика и
+				предлагаем оптимальные решения. Наши проекты эффективны и позволяют
+				бизнесу достигать поставленных целей. У нас работают опытные
+				специалисты, которые могут запустить даже самый сложный проект. Ваш
+				WEB-ресурс станет мощной основой для продвижения и развития компании.
+			</p>
+		</div>
 		<footer>
 			<div class="container footer__container">
 				<div class="footer__1">
 					<a href="index.html" class="footer__logo"><h4>SITELIGA</h4></a>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-						ipsum nobis ratione.
-					</p>
-				</div>
-
-				<div class="footer__2">
-					<h4>Permalinks</h4>
-					<ul class="permalinks">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="courses.html">Products</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-
-				<div class="footer__3">
-					<h4>Primacy</h4>
-					<ul class="privacy">
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Refund Policy</a></li>
-					</ul>
 				</div>
 
 				<div class="footer__4">
