@@ -4,12 +4,11 @@
 	border: 0;
 	outline: 0;
 	text-decoration: none;
-	list-style: none;
 	box-sizing: border-box;
 }
 
 :root {
-	--color-primary: #6c63ff;
+	--color-primary: #683df6;
 	--color-success: #00bf8e;
 	--color-warning: #f7c94b;
 	--color-danger: #000dff;
@@ -17,7 +16,7 @@
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.7);
 	--color-black: #000;
-	--color-bg: #1f2641;
+	--color-bg: #2a1f41;
 	--color-bg1: #2e3267;
 	--color-bg2: #424890;
 
@@ -610,7 +609,7 @@ footer ul li a:hover {
 	.footer__1 p {
 		margin: 1rem auto;
 	}
-
+	
 	.footer__socials {
 		justify-content: center;
 	}
@@ -722,4 +721,19 @@ input.check-toggle-round-flat + label:after {
 
 input.check-toggle-round-flat:checked + label:after {
 	margin-left: 44px;
+}
+
+.scrollable::-webkit-scrollbar {
+	width: 10px; /* Ширина панели прокрутки */
+}
+.scrollable::-webkit-scrollbar-track {
+	background: #613cd8; /* Цвет фона панели прокрутки */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+	background: #230a9e; /* Цвет ползунка панели прокрутки */
+	border-radius: 5px; /* Закругление углов ползунка */
+}
+.scrollable-content p {
+	font-size: 14px; /* Размер шрифта */
 }
