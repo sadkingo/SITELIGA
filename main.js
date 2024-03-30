@@ -100,13 +100,15 @@ var translations = {
         "ru": "ОБСУДИТЬ ПРОЕКТ"
     },
     "achievements": {
-        "en": "Achievements",
-        "ru": "Достижения"
+        "en": "Website development in the Czech Republic",
+        "ru": "Создание сайтов в Чехии"
     },
     "paragraph_desc": {
         
-        "en": "We have been on the market for over 5 years and have over 20 different products and 300 satisfied customers. Also, we have awards to prove our expertise.",
-        "ru": "Мы работаем на рынке уже более 5 лет, у нас более 20 различных продуктов и 300 довольных клиентов. Кроме того, у нас есть награды, подтверждающие нашу компетентность."
+    
+"en": 'Website creation is a complex process, which involves a lot of IT-specialists of different profiles. Today there is practically no company that has not "brought" its business online. The development and launch of a web resource is carried out in several stages. Only thorough preparation allows you to realize a project that will bring business results. Therefore, the choice of contractor should be treated responsibly. Our web studio in Prague SITELIGA develops turnkey websites, e-commerce sites, corporate resources for different business niches and any level of complexity.',
+"ru": "Создание веб-сайтов - это комплексный процесс, в который вовлечено множество IT-специалистов различных профилей. Сегодня практически нет компании, которая бы не 'вывела' свой бизнес в онлайн. Разработка и запуск веб-ресурса осуществляются на нескольких этапах. Только тщательная подготовка позволяет реализовать проект, который принесет реальные бизнес-результаты.\n\nПоэтому выбор подрядчика должен быть осознанным. Наша веб-студия в Праге, SITELIGA, разрабатывает под ключ лендинги, платформы электронной коммерции, корпоративные ресурсы для различных бизнес-ниш и любого уровня сложности."
+
     },
     "services": {
         "en": "Services",
@@ -126,9 +128,17 @@ var translations = {
         "ru": "Мы — компания по разработке программного обеспечения. Мы разрабатываем адаптивные интерфейсные приложения и веб-страницы. Кроме того, что отличает нас от наших конкурентов, так это то, что мы привлекаем клиентов в бизнес и рассказываем им о последних тенденциях. Вот наши ценности."
     },
     "contact_us": {
-        "en": "Contact Us",
-        "ru": "Написать нам"
+        "en": "CONTACT US",
+        "ru": "НАПИСАТЬ НАМ"
     },
+    "portfolio": {
+        "en": "PORTFOLIO",
+        "ru": "ПОРТФОЛИО"
+    },
+    "check_it_out": {
+        "en": "Check it out",
+        "ru": "ПОСЕТИТЬ САЙТ"
+    }
 
     // Добавьте другие переводы здесь
 };
