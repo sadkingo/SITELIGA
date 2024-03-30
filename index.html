@@ -51,6 +51,24 @@
 						<span class="off">RU</span>
 					</div>
 				</div>
+				<script>
+					function toggleLanguage() {
+						var langToggle = document.getElementById("language-toggle");
+						var langDisplay = document.querySelectorAll('.on, .off');
+					
+						if (langToggle.checked) {
+							// Если переключатель включен, показываем текст на русском
+							langDisplay.forEach(function(element) {
+								element.style.display = 'inline-block';
+							});
+						} else {
+							// Если переключатель выключен, показываем текст на английском
+							langDisplay.forEach(function(element) {
+								element.style.display = 'none';
+							});
+						}
+					}
+					</script>
 				<ul class="nav__menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -65,13 +83,11 @@
 		<header>
 			<div class="container header__container">
 				<div class="header__left">
-					<h1 data-i18n="header.title">
-						We are dedicated to your success and are always ready to help.
-					</h1>
-					<p>
+					<h1 data-i18n="header.title">We are dedicated to your success and are always ready to help.</h1>
+					<p data-i18n="paragraph.p">
 						We don't just make websites, we bring customers into the business
 					</p>
-					<a href="contact.html" class="btn btn-primary">Get Started</a>
+					<a data-i18n="button_get_started" href="contact.html" class="btn btn-primary">DISCUSS THE PROJECT</a>
 				</div>
 
 				<div class="header__right">
@@ -88,7 +104,7 @@
 		<section class="categories">
 			<div class="container categories__container">
 				<div class="categories__left">
-					<h1>Categories</h1>
+					<h1 data-i18n="categories.title">What we're doing</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
 						tenetur aut qui explicabo modi ipsa optio, ab doloremque quas,
