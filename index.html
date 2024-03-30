@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SITELIGA</title>
 
@@ -35,17 +36,24 @@
 		</style>
 	</head>
 	<body>
-		<div class="cursor-dot" data-cursor-dot></div>
-		<div class="cursor-outline" data-cursor-outline></div>
-
-		<script src="./cursor.js"></script>
 		<nav>
 			<div class="container nav__container">
 				<a href="index.html"><h4>SITELIGA</h4></a>
+				<div>
+					<div class="switch">
+						<input
+							id="language-toggle"
+							class="check-toggle check-toggle-round-flat"
+							type="checkbox"
+						/>
+						<label for="language-toggle"></label>
+						<span class="on">EN</span>
+						<span class="off">RU</span>
+					</div>
+				</div>
 				<ul class="nav__menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="courses.html">Products</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -57,7 +65,7 @@
 		<header>
 			<div class="container header__container">
 				<div class="header__left">
-					<h1>
+					<h1 data-i18n="header.title">
 						We are dedicated to your success and are always ready to help.
 					</h1>
 					<p>
@@ -87,7 +95,7 @@
 						provident rerum et, fugiat amet quia. Quisquam neque similique quas
 						optio!
 					</p>
-					<a href="#" class="btn">Learn More</a>
+					<a href="courses.html" class="btn">Learn More</a>
 				</div>
 
 				<div class="categories__right">
@@ -156,7 +164,7 @@
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
 							aperiam deserunt eaque quos iure ad debitis.
 						</p>
-						<a href="courses.html" class="btn btn-primary">Learn More</a>
+						<a href="contact.html" class="btn btn-primary">Learn More</a>
 					</div>
 				</article>
 
@@ -170,7 +178,7 @@
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
 							aperiam deserunt eaque quos iure ad debitis.
 						</p>
-						<a href="courses.html" class="btn btn-primary">Learn More</a>
+						<a href="contact.html" class="btn btn-primary">Learn More</a>
 					</div>
 				</article>
 
@@ -184,147 +192,12 @@
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
 							aperiam deserunt eaque quos iure ad debitis.
 						</p>
-						<a href="courses.html" class="btn btn-primary">Learn More</a>
+						<a href="contact.html" class="btn btn-primary">Learn More</a>
 					</div>
 				</article>
 			</div>
 		</section>
 		<!--====================== END OF COURSES =====================-->
-
-		<section class="faqs">
-			<h2>Frequently Asked Questions</h2>
-			<div class="container faqs__container">
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-
-				<article class="faq">
-					<div class="faq__icon"><i class="uil uil-plus"></i></div>
-					<div class="question__answer">
-						<h4>How do I know the right courses for me?</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							laudantium quis qui similique quidem at voluptatem ex. Est dolorum
-							minima dolor aut ut, accusantium vitae architecto aliquid nostrum
-							numquam quibusdam.
-						</p>
-					</div>
-				</article>
-			</div>
-		</section>
 		<!--====================== END OF FAQs =====================-->
 
 		<!--====================== END OF TESTIMONIALS =====================-->
@@ -382,7 +255,7 @@
 				</div>
 			</div>
 			<div class="footer__copyright">
-				<small>Copyright &copy; EGATOR YouTube Tutorials</small>
+				<small>Copyright &copy; SITELIGA</small>
 			</div>
 		</footer>
 
