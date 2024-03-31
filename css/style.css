@@ -18,7 +18,7 @@
 	--color-black: #000;
 	--color-bg: #1e0c45;
 	--color-bg1: #2e2e2f;
-	--color-bg2: #424890;
+	--color-bg2: #1c1c1c;
 
 	--container-width-lg: 80%;
 	--container-width-md: 90%;
@@ -116,8 +116,7 @@ nav {
 
 /* change navbar styles on scroll using javascript */
 .window-scroll {
-	background: var(--color-primary);
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	background-color: #141414;
 }
 
 .nav__container {
@@ -773,7 +772,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .title_footers {
 	position: absolute;
-	top: 2300px;
+	top: 2500px;
 }
 .title_footer3 {
 	color: #ffffff;
@@ -803,7 +802,7 @@ body {
 	margin: 0;
 	height: 100vh;
 	cursor: none;
-	background: rgb(27, 27, 27);
+	background: rgb(20, 20, 20);
 }
 
 .cursor {
@@ -865,4 +864,19 @@ body {
 .expand {
 	animation: cursorAnim3 0.5s forwards;
 	border: 1px solid rgb(13, 0, 255);
+}
+/* Стилизация ползунка прокрутки для Chrome, Safari, и Opera */
+body::-webkit-scrollbar {
+	width: 15px; /* Ширина ползунка */
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #211def; /* Цвет ползунка */
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #568dfb; /* Цвет трека прокрутки */
+}
+.portfolio {
+	font-size: 200px;
 }
