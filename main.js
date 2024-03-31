@@ -145,8 +145,28 @@ var translations = {
 		ru: 'ПОРТФОЛИО',
 	},
 	check_it_out: {
-		en: 'Check it out',
+		en: 'VISIT SITE',
 		ru: 'ПОСЕТИТЬ САЙТ',
+	},
+	funpay: {
+		en: 'Game store',
+		ru: 'Магазин игровых товаров',
+	},
+	sevencars: {
+		en: 'Luxury car rental service',
+		ru: 'Прокат автомобилей класса люкс',
+	},
+	liquorshop: {
+		en: 'Liquor Shop',
+		ru: 'Магазин алкогольной продукции',
+	},
+	leavecontacts: {
+		en: 'Drop us a request',
+		ru: 'Оставьте заявку,',
+	},
+	rest: {
+		en: "And we'll do the rest!",
+		ru: 'Остальное сделаем мы!',
 	},
 
 	// Добавьте другие переводы здесь
