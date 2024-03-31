@@ -101,8 +101,8 @@ var translations = {
 		ru: 'Мы посвящаемся вашему успеху и всегда готовы помочь.',
 	},
 	'categories.title': {
-		en: "What we're doing",
-		ru: 'Что мы делаем',
+		en: 'Our approach',
+		ru: 'Наш подход',
 	},
 	'paragraph.p': {
 		en: "We don't just make websites, we bring customers into the business",
