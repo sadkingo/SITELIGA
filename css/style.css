@@ -743,7 +743,7 @@ input.check-toggle-round-flat:checked + label:after {
 	width: 10px; /* Ширина панели прокрутки */
 }
 .scrollable::-webkit-scrollbar-track {
-	background: #613cd8; /* Цвет фона панели прокрутки */
+	background: #3c82d8; /* Цвет фона панели прокрутки */
 }
 
 .scrollable::-webkit-scrollbar-thumb {
@@ -770,6 +770,10 @@ input.check-toggle-round-flat:checked + label:after {
 	margin-left: 50px;
 	margin-right: 20px;
 	width: 600px;
+}
+.title_footers {
+	position: absolute;
+	top: 2300px;
 }
 .title_footer3 {
 	color: #ffffff;
@@ -803,8 +807,8 @@ body {
 }
 
 .cursor {
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
