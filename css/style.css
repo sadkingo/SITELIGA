@@ -8,7 +8,7 @@
 }
 
 :root {
-	--color-primary: #683df6;
+	--color-primary: #3d80f4;
 	--color-success: #00bf8e;
 	--color-warning: #f7c94b;
 	--color-danger: #000dff;
@@ -17,7 +17,7 @@
 	--color-light: rgba(255, 255, 255, 0.7);
 	--color-black: #000;
 	--color-bg: #1e0c45;
-	--color-bg1: #310376;
+	--color-bg1: #2e2e2f;
 	--color-bg2: #424890;
 
 	--container-width-lg: 80%;
@@ -30,6 +30,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.7;
+	cursor: none;
 	color: var(--color-white);
 	background: var(--color-bg);
 }
@@ -169,7 +170,7 @@ header {
 /* =================== CATEGORIES ===================== */
 .categories {
 	background: var(--color-bg1);
-	height: 32rem;
+	height: 40rem;
 }
 
 .categories h1 {
@@ -404,94 +405,109 @@ footer ul li a:hover {
 }
 
 /* ===================== MEDIA QUERIES (TABLETS) ==================== */
+.container {
+	width: var(--container-width-md);
+}
+
+h1 {
+	font-size: 2.2rem;
+}
+
+h2 {
+	font-size: 1.7rem;
+}
+
+h3 {
+	font-size: 1.4rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+
+/* ====================== NAVBAR ===================== */
+/* Общие стили для кнопок */
+nav button {
+	display: inline-block;
+	background: transparent;
+	font-size: 1.8rem;
+	color: var(--color-white);
+	cursor: pointer;
+}
+
+/* Скрыть кнопку закрытия меню на мобильных устройствах */
+nav button#close-menu-btn {
+	display: none;
+}
+
+/* Стили для меню */
+.nav__menu {
+	position: fixed;
+	top: 5rem;
+	right: 5%;
+	height: fit-content;
+	width: 18rem;
+	flex-direction: column;
+	gap: 0;
+	display: none;
+}
+
+/* Анимация для пунктов меню */
+.nav__menu li {
+	width: 100%;
+	height: 5.8rem;
+	animation: animateNavItems 400ms linear forwards;
+	transform-origin: top right;
+	opacity: 0;
+}
+
+.nav__menu li:nth-child(2) {
+	animation-delay: 200ms;
+}
+
+.nav__menu li:nth-child(3) {
+	animation-delay: 400ms;
+}
+
+.nav__menu li:nth-child(4) {
+	animation-delay: 600ms;
+}
+
+@keyframes animateNavItems {
+	0% {
+		transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+	}
+
+	100% {
+		transform: rotateZ(0) rotateX(0) scale(1);
+		opacity: 1;
+	}
+}
+
+/* Стили для ссылок в меню */
+.nav__menu li a {
+	background: var(--color-primary);
+	box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+/* При наведении на ссылки меню */
+.nav__menu li a:hover {
+	background: var(--color-bg2);
+	color: var(--color-white);
+}
+
+/* Медиа-запрос для мобильных устройств */
 @media screen and (max-width: 1024px) {
-	.container {
-		width: var(--container-width-md);
-	}
-
-	h1 {
-		font-size: 2.2rem;
-	}
-
-	h2 {
-		font-size: 1.7rem;
-	}
-
-	h3 {
-		font-size: 1.4rem;
-	}
-
-	h4 {
-		font-size: 1.2rem;
-	}
-
-	/* ====================== NAVBAR ===================== */
 	nav button {
-		display: inline-block;
-		background: transparent;
-		font-size: 1.8rem;
-		color: var(--color-white);
-		cursor: pointer;
+		/* Стили кнопок такие же, как и в общих стилях */
 	}
 
 	nav button#close-menu-btn {
-		display: none;
-	}
-
-	.nav__menu {
-		position: fixed;
-		top: 5rem;
-		right: 5%;
-		height: fit-content;
-		width: 18rem;
-		flex-direction: column;
-		gap: 0;
-		display: none;
-	}
-
-	.nav__menu li {
-		width: 100%;
-		height: 5.8rem;
-		animation: animateNavItems 400ms linear forwards;
-		transform-origin: top right;
-		opacity: 0;
-	}
-
-	.nav__menu li:nth-child(2) {
-		animation-delay: 200ms;
-	}
-
-	.nav__menu li:nth-child(3) {
-		animation-delay: 400ms;
-	}
-
-	.nav__menu li:nth-child(4) {
-		animation-delay: 600ms;
-	}
-
-	@keyframes animateNavItems {
-		0% {
-			transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
-		}
-
-		100% {
-			transform: rotateZ(0) rotateX(0) scale(1);
-			opacity: 1;
-		}
-	}
-
-	.nav__menu li a {
-		background: var(--color-primary);
-		box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
-		width: 100%;
-		height: 100%;
-		display: grid;
-		place-items: center;
-	}
-
-	.nav__menu li a:hover {
-		background: var(--color-bg2);
-		color: var(--color-white);
+		display: none; /* Скрыть кнопку закрытия меню */
 	}
 
 	/* ====================== HEADER ===================== */
@@ -609,7 +625,7 @@ footer ul li a:hover {
 	.footer__1 p {
 		margin: 1rem auto;
 	}
-	
+
 	.footer__socials {
 		justify-content: center;
 	}
@@ -736,4 +752,113 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .scrollable-content p {
 	font-size: 14px; /* Размер шрифта */
+}
+
+.title_footer {
+	color: #72adf1;
+	font-size: 55px;
+	margin-top: 50px; /* Опускаем элемент на 30 пикселей вниз */
+	margin-left: 50px;
+	margin-right: 20px;
+	width: 600px;
+}
+
+.title_footer2 {
+	color: #ffffff;
+	font-size: 40px;
+	margin-top: 30px; /* Опускаем элемент на 30 пикселей вниз */
+	margin-left: 50px;
+	margin-right: 20px;
+	width: 600px;
+}
+.title_footer3 {
+	color: #ffffff;
+	font-size: 40px;
+	margin-top: 25px; /* Опускаем элемент на 30 пикселей вниз */
+	margin-left: 50px;
+	margin-right: 20px;
+	width: 600px;
+}
+
+/* Добавляем стили для мобильных устройств */
+@media (max-width: 768px) {
+	.title_footer {
+		font-size: 40px;
+		width: auto;
+		margin: 30px 20px;
+	}
+
+	.title_footer2,
+	.title_footer3 {
+		font-size: 30px;
+		width: auto;
+		margin: 20px;
+	}
+}
+body {
+	margin: 0;
+	height: 100vh;
+	cursor: none;
+	background: rgb(27, 27, 27);
+}
+
+.cursor {
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+	animation: cursorAnim 0.5s infinite alternate;
+	pointer-events: none;
+}
+
+.cursor::after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border: 8px solid gray;
+	border-radius: 50%;
+	opacity: 0.5;
+	top: -8px;
+	left: -8px;
+	animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.7);
+	}
+}
+
+@keyframes cursorAnim2 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.4);
+	}
+}
+
+@keyframes cursorAnim3 {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(3);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.expand {
+	animation: cursorAnim3 0.5s forwards;
+	border: 1px solid rgb(13, 0, 255);
 }
