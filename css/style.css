@@ -739,18 +739,17 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .scrollable::-webkit-scrollbar {
-	width: 10px; /* Ширина панели прокрутки */
+	width: 5px; /* Ширина панели прокрутки */
 }
 .scrollable::-webkit-scrollbar-track {
-	background: #3c82d8; /* Цвет фона панели прокрутки */
+	background: #151515; /* Цвет фона панели прокрутки */
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-	background: #230a9e; /* Цвет ползунка панели прокрутки */
-	border-radius: 5px; /* Закругление углов ползунка */
+	background: #211def; /* Цвет ползунка панели прокрутки */
 }
 .scrollable-content p {
-	font-size: 14px; /* Размер шрифта */
+	font-size: 10px; /* Размер шрифта */
 }
 
 .title_footer {
@@ -867,7 +866,7 @@ body {
 }
 /* Стилизация ползунка прокрутки для Chrome, Safari, и Opera */
 body::-webkit-scrollbar {
-	width: 15px; /* Ширина ползунка */
+	width: 10px; /* Ширина ползунка */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -875,7 +874,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-	background-color: #568dfb; /* Цвет трека прокрутки */
+	background-color: #151515; /* Цвет трека прокрутки */
 }
 .portfolio {
 	font-size: 200px;
