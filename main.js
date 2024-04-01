@@ -6,19 +6,6 @@ window.addEventListener('scroll', () => {
 		.classList.toggle('window-scroll', window.scrollY > 0)
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-	var titleElement = document.querySelector('[data-i18n="categories.title1"]');
-	var titleText = titleElement.textContent;
-	var approachIndex = titleText.indexOf('approach');
-	
-	if (approachIndex !== -1) {
-			var beforeApproach = titleText.substring(0, approachIndex);
-			var afterApproach = titleText.substring(approachIndex + 'approach'.length);
-
-			titleElement.innerHTML = beforeApproach + '<span class="last-word" style="color: blue;">approach</span>' + afterApproach;
-	}
-});
-
 // show/hide faq answer
 
 const faqs = document.querySelectorAll('.faq')
