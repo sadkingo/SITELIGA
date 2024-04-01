@@ -6,6 +6,19 @@ window.addEventListener('scroll', () => {
 		.classList.toggle('window-scroll', window.scrollY > 0)
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+	var titleElement = document.querySelector('[data-i18n="categories.title1"]');
+	var titleText = titleElement.textContent;
+	var approachIndex = titleText.indexOf('approach');
+	
+	if (approachIndex !== -1) {
+			var beforeApproach = titleText.substring(0, approachIndex);
+			var afterApproach = titleText.substring(approachIndex + 'approach'.length);
+
+			titleElement.innerHTML = beforeApproach + '<span class="last-word" style="color: blue;">approach</span>' + afterApproach;
+	}
+});
+
 // show/hide faq answer
 
 const faqs = document.querySelectorAll('.faq')
@@ -83,6 +96,7 @@ document.addEventListener('click', () => {
 		cursor.classList.remove('expand')
 	}, 500)
 })
+
 var translations = {
 	home: {
 		en: 'Home',
@@ -97,16 +111,16 @@ var translations = {
 		ru: 'Связь',
 	},
 	'header.title': {
-		en: 'We are dedicated to your success and are always ready to help.',
-		ru: 'Мы посвящаемся вашему успеху и всегда готовы помочь.',
+		en: "We're here to help you succeed.",
+		ru: 'Мы здесь, чтобы помочь вам добиться успеха',
 	},
-	'categories.title': {
+	'categories.title1': {
 		en: 'Our approach',
 		ru: 'Наш подход',
 	},
 	'paragraph.p': {
-		en: "We don't just make websites, we bring customers into the business",
-		ru: 'Мы не просто делаем сайты, мы привлекаем клиентов в бизнес.',
+		en: 'Professional web development and design studio',
+		ru: 'Профессиональная студия веб разработки и дизайна',
 	},
 	button_get_started: {
 		en: 'DISCUSS THE PROJECT',
@@ -148,9 +162,9 @@ var translations = {
 		en: 'VISIT SITE',
 		ru: 'ПОСЕТИТЬ САЙТ',
 	},
-	funpay: {
-		en: 'Game store',
-		ru: 'Магазин игровых товаров',
+	mebelvdom: {
+		en: 'Furniture store',
+		ru: 'Магазин мебели',
 	},
 	sevencars: {
 		en: 'Luxury car rental service',
