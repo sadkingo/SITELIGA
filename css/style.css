@@ -33,12 +33,18 @@ body {
 	cursor: none;
 	color: var(--color-white);
 	background: var(--color-bg);
+	overflow-x: hidden;
+}
+li {
+	list-style-type: none; /* Убираем маркеры */
 }
 .ouraprouch {
-	font-size: 70px;
+	font-size: 100px;
+	margin-left: 80px;
 }
+
 .dedicated {
-	font-size: 45px;
+	font-size: 75px;
 }
 .paragraph_start {
 	font-size: 30px;
