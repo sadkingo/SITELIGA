@@ -25,26 +25,30 @@ faqs.forEach(faq => {
 })
 
 // Получаем ссылки на элементы
+// Получаем ссылки на элементы
 var modal = document.getElementById('myModal')
-var btn = document.getElementById('openModal')
-var span = document.getElementsByClassName('close')[0]
+var btns = document.querySelectorAll('.btn')
+var span = document.querySelector('.close')
 
-// При клике на кнопку открываем модальное окно
-btn.onclick = function () {
-	modal.style.display = 'block'
-}
+// При клике на каждую кнопку открываем модальное окно
+btns.forEach(function (btn) {
+	btn.addEventListener('click', function (event) {
+		event.preventDefault() // предотвращаем действие по умолчанию
+		modal.style.display = 'block'
+	})
+})
 
 // При клике на закрывающий элемент закрываем модальное окно
-span.onclick = function () {
+span.addEventListener('click', function () {
 	modal.style.display = 'none'
-}
+})
 
 // При клике вне модального окна закрываем его
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
 	if (event.target == modal) {
 		modal.style.display = 'none'
 	}
-}
+})
 
 // show/hide nav menu
 const menu = document.querySelector('.nav__menu')
@@ -121,6 +125,7 @@ function scrollFunction() {
 // Прокручиваем страницу к началу плавно
 function scrollToTop() {
 	const scrollToTopBtn = document.getElementById('scrollToTopBtn')
+	const scrollToTopBtn2 = document.getElementById('scrollToTopBtn2')
 	const scrollStep = -window.scrollY / (500 / 15)
 	const scrollInterval = setInterval(function () {
 		if (window.scrollY !== 0) {
@@ -274,7 +279,11 @@ var translations = {
 	},
 	send_button: {
 		en: 'SEND',
-		ru: 'Отправить'
+		ru: 'Отправить',
+	},
+	go_top: {
+		en: 'Go top',
+		ru: 'Вверх'
 	},
 	// Добавьте другие переводы здесь
 }
