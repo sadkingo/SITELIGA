@@ -230,8 +230,8 @@ var translations = {
 		ru: 'НАПИСАТЬ НАМ',
 	},
 	portfolio: {
-		en: 'PORTFOLIO',
-		ru: 'ПОРТФОЛИО',
+		en: 'Portfolio',
+		ru: 'Портфолио',
 	},
 	check_it_out: {
 		en: 'VISIT SITE',
