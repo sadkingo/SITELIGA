@@ -24,6 +24,28 @@ faqs.forEach(faq => {
 	})
 })
 
+// Получаем ссылки на элементы
+var modal = document.getElementById('myModal')
+var btn = document.getElementById('openModal')
+var span = document.getElementsByClassName('close')[0]
+
+// При клике на кнопку открываем модальное окно
+btn.onclick = function () {
+	modal.style.display = 'block'
+}
+
+// При клике на закрывающий элемент закрываем модальное окно
+span.onclick = function () {
+	modal.style.display = 'none'
+}
+
+// При клике вне модального окна закрываем его
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = 'none'
+	}
+}
+
 // show/hide nav menu
 const menu = document.querySelector('.nav__menu')
 const menuBtn = document.querySelector('#open-menu-btn')
@@ -82,6 +104,67 @@ document.addEventListener('click', () => {
 	setTimeout(() => {
 		cursor.classList.remove('expand')
 	}, 500)
+})
+
+window.onscroll = function () {
+	scrollFunction()
+}
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById('scrollToTopBtn').style.display = 'block'
+	} else {
+		document.getElementById('scrollToTopBtn').style.display = 'none'
+	}
+}
+
+// Прокручиваем страницу к началу плавно
+function scrollToTop() {
+	const scrollToTopBtn = document.getElementById('scrollToTopBtn')
+	const scrollStep = -window.scrollY / (500 / 15)
+	const scrollInterval = setInterval(function () {
+		if (window.scrollY !== 0) {
+			window.scrollBy(0, scrollStep)
+		} else {
+			clearInterval(scrollInterval)
+		}
+	}, 15)
+}
+document.addEventListener('DOMContentLoaded', function () {
+	var ideaImage = document.querySelector('.idea_image')
+	var deadImage = document.querySelector('.deadline_image')
+
+	function fadeInOnScroll() {
+		var scrollPosition = window.scrollY || window.pageYOffset
+		var windowHeight = window.innerHeight
+		var imagePosition = ideaImage.getBoundingClientRect().top
+		var imagePosition = deadImage.getBoundingClientRect().top
+
+		if (imagePosition < windowHeight / 2) {
+			ideaImage.style.opacity = 1
+			deadImage.style.opacity = 1
+		}
+	}
+
+	window.addEventListener('scroll', fadeInOnScroll)
+})
+document.addEventListener('DOMContentLoaded', function () {
+	var budgetArticle = document.querySelector('.budget_article')
+	var deadArticle = document.querySelector('.deadline_article')
+
+	function fadeInOnScroll() {
+		var scrollPosition = window.scrollY || window.pageYOffset
+		var windowHeight = window.innerHeight
+		var articlePosition = budgetArticle.getBoundingClientRect().top
+		var articlePosition = deadArticle.getBoundingClientRect().top
+
+		if (articlePosition < windowHeight / 2) {
+			budgetArticle.style.opacity = 1
+			deadArticle.style.opacity = 1
+		}
+	}
+
+	window.addEventListener('scroll', fadeInOnScroll)
 })
 
 var translations = {
@@ -169,6 +252,29 @@ var translations = {
 		en: "And we'll do the rest!",
 		ru: 'Остальное сделаем мы!',
 	},
-
+	budget_article: {
+		en: 'We find the best solution based on business objectives and within budget',
+		ru: 'Мы находим оптимальное решение, исходя из целей бизнеса и в рамках бюджета',
+	},
+	deadline_article: {
+		en: 'We respect the deadlines, budget and level of quality of the project',
+		ru: 'Соблюдаем сроки, бюджет и уровень качества проекта',
+	},
+	placeholder_title: {
+		en: 'Discuss the project',
+		ru: 'Обсудить проект',
+	},
+	file_instruction: {
+		en: 'Do you have terms reference?',
+		ru: 'Есть техническое задание?',
+	},
+	file_upload: {
+		en: 'Attach file',
+		ru: 'Прикрепить файл',
+	},
+	send_button: {
+		en: 'SEND',
+		ru: 'Отправить'
+	},
 	// Добавьте другие переводы здесь
 }
