@@ -888,7 +888,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #211def; /* Цвет ползунка */
+	background-color: #000dff; /* Цвет ползунка */
 }
 
 body::-webkit-scrollbar-track {
@@ -896,4 +896,214 @@ body::-webkit-scrollbar-track {
 }
 .portfolio {
 	font-size: 200px;
+}
+#scrollToTopBtn {
+	width: 100px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+.pulse {
+	animation-name: pulse;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.pulse:hover {
+	animation-name: none;
+	animation-fill-mode: forwards;
+}
+
+.pulse:hover {
+	animation: zoom 0.3s ease-in-out forwards;
+}
+/* Скрыть модальное окно по умолчанию */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	justify-content: center;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden; /* Отключение прокрутки */
+	background-color: rgba(21, 21, 21, 0); /* Начальная прозрачность */
+	animation-name: fadeIn; /* Название анимации */
+	animation-duration: 0.5s; /* Длительность анимации */
+	animation-fill-mode: forwards; /* Сохранение последнего состояния анимации */
+}
+
+@keyframes fadeIn {
+	from {
+		/* Начальное состояние */
+		background-color: rgba(21, 21, 21, 0); /* Прозрачность 0 */
+	}
+	to {
+		/* Конечное состояние */
+		background-color: rgba(21, 21, 21, 0.8); /* Прозрачность 70% */
+	}
+}
+
+/* Оформление содержимого модального окна */
+.modal-content {
+	background-color: #171717;
+	margin: 10% auto;
+	padding: 20px;
+	width: 35%;
+	height: 70%;
+	overflow: hidden; /* Отключение прокрутки */
+}
+.placeholder_title {
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 50px;
+}
+/* Закрывающая кнопка */
+.close {
+	color: #ffffff;
+	float: right;
+	font-size: 40px;
+	font-weight: bold;
+}
+.submit__button {
+	display: flex;
+	background-color: #000dff;
+	color: white;
+	width: 500px;
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: 550;
+	height: 80px;
+	justify-content: center;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.submit__button:hover {
+	border: 1px solid white;
+	background-color: #141414;
+}
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+	border: none;
+	border-bottom: 1px solid #505050;
+	background-color: transparent;
+	padding: 5px 0;
+	margin: 10px auto; /* Центрирование по горизонтали */
+	width: 80%;
+	box-sizing: border-box;
+	font-size: 20px;
+	display: block; /* Превращаем в блочный элемент */
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus {
+	outline: none;
+	border-color: rgb(255, 255, 255);
+}
+::-webkit-input-placeholder {
+	/* Chrome, Safari, Opera */
+	color: white;
+}
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: white;
+}
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: white;
+}
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: white;
+}
+.file-upload-label {
+	margin-left: 300px;
+	position: relative;
+	color: #000dff;
+	top: -28px;
+}
+.file-instruction {
+	margin-left: 55px;
+}
+.idea_image {
+	width: 150px;
+	position: absolute;
+	height: 150px;
+	margin-left: 930px;
+	opacity: 0; /* Установка нулевой прозрачности для начального скрытого состояния */
+	transition: opacity 0.5s ease; /* Плавная анимация изменения прозрачности */
+	top: 830px;
+}
+
+.budget_article {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	text-align: right; /* Выравнивание текста по правому краю */
+	word-wrap: break-word; /* Разрыв строк при необходимости */
+	max-width: 700px; /* Максимальная ширина текста */
+	margin: 0 auto; /* Центрирование текста по горизонтали */
+	font-weight: 400;
+	font-size: 25px;
+	margin-left: 1100px;
+	margin-right: 35px;
+	top: 870px;
+}
+.deadline_image {
+	width: 150px;
+	position: absolute;
+	height: 150px;
+	margin-left: 930px;
+	top: 1100px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.deadline_article {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	text-align: right; /* Выравнивание текста по правому краю */
+	word-wrap: break-word; /* Разрыв строк при необходимости */
+	max-width: 700px; /* Максимальная ширина текста */
+	margin: 0 auto; /* Центрирование текста по горизонтали */
+	font-weight: 400;
+	font-size: 25px;
+	margin-left: 1100px;
+	margin-right: 35px;
+	top: 1100px;
+}
+.attachment-icon {
+	width: 20px;
+	height: 20px;
+	filter: invert(30%) sepia(92%) saturate(1050%) hue-rotate(194deg)
+		brightness(100%) contrast(100%);
+}
+.attachment-icon {
+	margin-left: 460px;
+	position: absolute;
+	top: 605px;
 }
