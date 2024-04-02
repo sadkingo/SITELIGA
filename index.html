@@ -109,7 +109,7 @@
 						data-i18n="button_get_started"
 						href="#"
 						class="btn btn-primary"
-						id="openModal"
+						id="openModal1"
 						>DISCUSS THE PROJECT</a
 					>
 				</div>
@@ -391,11 +391,72 @@
 			<img class="email_icon" src="./images/mail.png" alt="email" />
 			<a
 				data-i18n="button_get_started"
-				href="#"
 				class="btn btn-primary2"
-				id="openModal"
+				href="#"
+				id="openModal2"
 				>DISCUSS THE PROJECT</a
 			>
+		</div>
+		<div id="myModal2" class="modal">
+			<!-- Контент модального окна -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2 data-i18n="placeholder_title" class="placeholder_title">
+					Обсудить проект
+				</h2>
+				<form action="https://formspree.io/f/xyyrnolv" method="POST">
+					<label for="name"><span></span></label><br />
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Ваше имя*"
+					/><br />
+					<label for="phone"><span></span></label><br />
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						placeholder="Ваш телефон*"
+					/><br />
+					<label for="email"><span></span></label><br />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Ваш email"
+					/><br />
+					<!-- Надпись перед элементом для прикрепления файла -->
+					<label data-i18n="file_instruction" class="file-instruction"
+						>Есть техническое задание?</label
+					>
+					<label
+						data-i18n="file_upload"
+						for="file-upload"
+						class="file-upload-label"
+						>Прикрепить файл
+					</label>
+					<img
+						src="./images/clipboard.png"
+						alt="image"
+						class="attachment-icon"
+					/>
+					<input
+						type="file"
+						id="file-upload"
+						name="file-upload"
+						style="display: none"
+					/>
+					<br /><br />
+
+					<input
+						data-i18n="send_button"
+						class="submit__button"
+						type="submit"
+						value="SEND"
+					/>
+				</form>
+			</div>
 		</div>
 		<footer>
 			<div class="footer__1">
@@ -426,6 +487,7 @@
 				},
 			})
 		</script>
+		<h3 data-i18n="go_top" class="go_top" id="scrollToTopBtn2" onclick="scrollToTop()">Go top</h3>
 		<img
 			src="./images/up-arrow-svgrepo-com.png"
 			onclick="scrollToTop()"
