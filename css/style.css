@@ -789,7 +789,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .title_footers {
 	position: absolute;
-	top: 2500px;
+	top: 2360px;
 }
 .title_footer3 {
 	color: #ffffff;
@@ -799,7 +799,9 @@ input.check-toggle-round-flat:checked + label:after {
 	margin-right: 20px;
 	width: 600px;
 }
-
+.scrollable {
+	margin-top: 140px;
+}
 /* Добавляем стили для мобильных устройств */
 @media (max-width: 768px) {
 	.title_footer {
@@ -895,7 +897,31 @@ body::-webkit-scrollbar-track {
 	background-color: #151515; /* Цвет трека прокрутки */
 }
 .portfolio {
-	font-size: 200px;
+	position: relative;
+	top: 20px;
+	font-size: 90px;
+	margin-left: 10px;
+}
+.portfolio_border {
+	position: relative;
+	top: -150px;
+	color: #151515;
+	font-size: 90px;
+	margin-right: 1200px;
+	text-shadow: -1px -1px 0 #858484, 1px -1px 0 #858484, -1px 1px 0 #858484,
+		1px 1px 0 #858484;
+}
+.portfolio_border2 {
+	position: relative;
+	top: -320px;
+	color: #151515;
+	font-size: 90px;
+	margin-left: 1150px;
+	text-shadow: -1px -1px 0 #858484, 1px -1px 0 #858484, -1px 1px 0 #858484,
+		1px 1px 0 #858484;
+}
+.courses__container {
+	margin-top: -350px;
 }
 #scrollToTopBtn {
 	width: 100px;
