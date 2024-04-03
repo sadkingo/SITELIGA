@@ -98,7 +98,17 @@ img {
 	display: block;
 	object-fit: cover;
 }
-
+#logo_footer {
+	position: relative;
+	top: -50px;
+	width: 30%;
+	height: 10%;
+	display: flex;
+	object-fit: cover;
+}
+.footer__1 {
+	height: 10px;
+}
 .btn {
 	display: inline-block;
 	background: var(--color-white);
@@ -381,9 +391,9 @@ header {
 /* =================== FOOTER ===================== */
 footer {
 	background: var(--color-bg1);
-	padding-top: 1rem;
+	padding-top: 2rem;
 	font-size: 0.9rem;
-	height: 20px;
+	height: 3px;
 	border-top: 1px solid rgb(67, 67, 67);
 }
 
@@ -418,7 +428,7 @@ footer ul li a:hover {
 
 .footer__copyright {
 	text-align: center;
-	margin-top: 4rem;
+	margin-top: 9rem;
 	padding: 1.2rem 0;
 }
 /* ===================== MEDIA QUERIES (TABLETS) ==================== */
@@ -439,7 +449,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.9rem;
+	font-size: 2.5rem;
 }
 
 /* ====================== NAVBAR ===================== */
@@ -646,6 +656,16 @@ nav button#close-menu-btn {
 	.footer__socials {
 		justify-content: center;
 	}
+	.footer__logo {
+		position: relative;
+		right: 200px;
+		width: 20px;
+	}
+	.dot {
+		border-radius: 50%;
+		color: #000dff;
+		margin-left: 1000;
+	}
 }
 /* ====================== LANGUAGE BUTTON ===================== */
 
@@ -773,6 +793,7 @@ input.check-toggle-round-flat:checked + label:after {
 .title_footer {
 	color: #000dff;
 	font-size: 55px;
+	font-weight: 500;
 	margin-top: 50px; /* Опускаем элемент на 30 пикселей вниз */
 	margin-left: 50px;
 	margin-right: 20px;
@@ -781,7 +802,8 @@ input.check-toggle-round-flat:checked + label:after {
 
 .title_footer2 {
 	color: #ffffff;
-	font-size: 40px;
+	font-size: 55px;
+	font-weight: 500;
 	margin-top: 30px; /* Опускаем элемент на 30 пикселей вниз */
 	margin-left: 50px;
 	margin-right: 20px;
@@ -1137,7 +1159,7 @@ input[type='tel']:focus {
 	background-color: #000dff;
 	color: white;
 	height: 5rem;
-	width: 400px;
+	width: 430px;
 	margin-left: 50px;
 	margin-top: 60px;
 }
@@ -1163,4 +1185,11 @@ input[type='tel']:focus {
 .go_top {
 	margin-bottom: 10px;
 	margin-left: 12px;
+}
+.logo {
+	position: relative;
+	right: 200px;
+	margin-top: 220px;
+	width: 500px;
+	height: 500px;
 }
