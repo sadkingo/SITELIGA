@@ -288,6 +288,14 @@ var translations = {
 	button_get_started2: {
 		en: 'SUBMIT YOUR APPLICATION',
 		ru: 'ОСТАВИТЬ ЗАЯВКУ'
-	}
+	},
+	title_browser: {
+		en: 'ATLANTSITE: Website development in the Czech Republic - WEB-Development',
+		ru: 'ATLANTSITE: Создание сайтов в Чехии - WEB-Разработка'
+	},
+	location: {
+		en: 'Prague',
+		ru: 'Прага'
+	},
 	// Добавьте другие переводы здесь
 }
