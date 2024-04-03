@@ -1176,6 +1176,20 @@ input[type='tel']:focus {
 	height: 30px;
 	margin-left: 50px;
 }
+
+.location {
+	font-weight: 400;
+	margin-left: 100px;
+	margin-top: 60px;
+	font-size: 30px;
+}
+.location_icon {
+	position: relative;
+	top: -30px;
+	width: 30px;
+	height: 30px;
+	margin-left: 50px;
+}
 .title_footers {
 	padding-top: 185px;
 }
