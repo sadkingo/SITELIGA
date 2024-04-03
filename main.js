@@ -285,5 +285,9 @@ var translations = {
 		en: 'Go top',
 		ru: 'Вверх'
 	},
+	button_get_started2: {
+		en: 'SUBMIT YOUR APPLICATION',
+		ru: 'ОСТАВИТЬ ЗАЯВКУ'
+	}
 	// Добавьте другие переводы здесь
 }
