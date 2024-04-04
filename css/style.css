@@ -138,10 +138,14 @@ nav {
 	width: 100vw;
 	height: 5rem;
 	position: fixed;
-	top: 0;
+	top: -100px;
 	z-index: 11;
+	transition: top 0.4s; /* Анимация смены положения */
 }
 
+.nav-show {
+	top: 0; /* Показываем навигационное меню сверху */
+}
 /* change navbar styles on scroll using javascript */
 .window-scroll {
 	background-color: #141414;
@@ -172,6 +176,7 @@ nav button {
 .nav__menu a:hover {
 	color: var(--color-bg2);
 }
+
 
 /* =================== HEADER ===================== */
 header {
