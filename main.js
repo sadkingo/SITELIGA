@@ -1,9 +1,29 @@
 // change navbar styles on scroll
 
+let prevScrollpos = window.pageYOffset
+let isScrollingUp = false
+let nav = document.querySelector('nav')
+
+// Показываем навигационное меню при загрузке страницы
+nav.classList.add('nav-show')
+
 window.addEventListener('scroll', () => {
-	document
-		.querySelector('nav')
-		.classList.toggle('window-scroll', window.scrollY > 0)
+	let currentScrollPos = window.pageYOffset
+
+	if (prevScrollpos > currentScrollPos) {
+		isScrollingUp = true // Устанавливаем флаг прокрутки вверх
+	} else {
+		isScrollingUp = false // Сбрасываем флаг, если прокрутка вниз
+	}
+
+	// Добавляем класс для анимации появления при прокрутке вверх после прокрутки вниз
+	if (isScrollingUp) {
+		nav.classList.add('nav-show')
+	} else {
+		nav.classList.remove('nav-show')
+	}
+
+	prevScrollpos = currentScrollPos
 })
 
 // show/hide faq answer
@@ -82,16 +102,27 @@ function applyTranslations(language) {
 
 // Применяем переводы при загрузке страницы
 document.addEventListener('DOMContentLoaded', function () {
-	applyTranslations('en') // По умолчанию применяем переводы на английский язык
-})
+	// Проверяем, есть ли сохраненный выбранный язык в localStorage
+	var selectedLanguage = localStorage.getItem('selectedLanguage');
+
+	// Если язык был сохранен, применяем его
+	if (selectedLanguage) {
+			applyTranslations(selectedLanguage);
+	} else {
+			// В противном случае применяем переводы на английский язык по умолчанию
+			applyTranslations('en');
+	}
+});
 
 // Применяем переводы при переключении языка
-document
-	.getElementById('language-toggle')
-	.addEventListener('change', function () {
-		var language = this.checked ? 'ru' : 'en' // Проверяем состояние переключателя
-		applyTranslations(language) // Применяем соответствующие переводы
-	})
+document.getElementById('language-toggle').addEventListener('change', function () {
+	var language = this.checked ? 'ru' : 'en'; // Проверяем состояние переключателя
+	applyTranslations(language); // Применяем соответствующие переводы
+
+	// Сохраняем выбранный язык в localStorage
+	localStorage.setItem('selectedLanguage', language);
+});
+
 
 const cursor = document.querySelector('.cursor')
 
@@ -283,19 +314,19 @@ var translations = {
 	},
 	go_top: {
 		en: 'Go top',
-		ru: 'Вверх'
+		ru: 'Вверх',
 	},
 	button_get_started2: {
 		en: 'SUBMIT YOUR APPLICATION',
-		ru: 'ОСТАВИТЬ ЗАЯВКУ'
+		ru: 'ОСТАВИТЬ ЗАЯВКУ',
 	},
 	title_browser: {
 		en: 'ATLANTSITE: Website development in the Czech Republic - WEB-Development',
-		ru: 'ATLANTSITE: Создание сайтов в Чехии - WEB-Разработка'
+		ru: 'ATLANTSITE: Создание сайтов в Чехии - WEB-Разработка',
 	},
 	location: {
 		en: 'Prague',
-		ru: 'Прага'
+		ru: 'Прага',
 	},
 	// Добавьте другие переводы здесь
 }
