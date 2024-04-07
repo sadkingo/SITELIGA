@@ -215,6 +215,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('scroll', fadeInOnScroll)
 })
 
+
+
+
+
 var translations = {
 	home: {
 		en: 'Home',
