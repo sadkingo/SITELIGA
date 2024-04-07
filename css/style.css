@@ -130,6 +130,7 @@ img {
 	color: var(--color-white);
 	width: 300px;
 	height: 80px;
+	margin-bottom: 20px;
 }
 
 /* =================== NAVBAR ===================== */
@@ -816,8 +817,28 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .title_footers {
 	position: absolute;
-	top: 2360px;
+	top: 2800px;
+	margin-top: 10px;
 }
+.portfolio {
+	position: relative;
+	top: 20px;
+	font-size: 90px;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.portfolio {
+			font-size: 60px; /* Уменьшаем размер шрифта */
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.portfolio {
+			font-size: 40px; /* Дополнительное уменьшение размера шрифта для более маленьких экранов */
+	}
+}
+
 .title_footer3 {
 	color: #ffffff;
 	font-size: 40px;
@@ -947,13 +968,57 @@ body::-webkit-scrollbar-track {
 	text-shadow: -1px -1px 0 #858484, 1px -1px 0 #858484, -1px 1px 0 #858484,
 		1px 1px 0 #858484;
 }
+@media screen and (max-width: 1080px) {
+	.portfolio_border,
+	.portfolio_border2 {
+			display: none; /* Скрыть элементы */
+	}
+}
+@media screen and (max-width: 1080px) {
+	.ouraprouch {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 1080) {
+	.budget_article {
+		align-items: center;
+	}
+}
+@media screen and (max-width: 1080) {
+	.scrollable {
+		position: absolute;
+		left: 200px;
+		width: 500px;
+		height: 500px;
+	}
+}
+@media screen and (max-width: 1080) {
+	.title_footers {
+		font-size: 5px;
+		margin-left: 10px;
+		margin-bottom: 100px;
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+.title_footers {
+	margin-top: 10;
+	padding-top: 0;
+}
+@media screen and (max-width: 1080) {
+	.categories {
+		margin-top: 300px;
+	}
+}
 .courses__container {
 	margin-top: -350px;
 }
 #scrollToTopBtn {
 	width: 100px;
 }
-
+.scrollable {
+	margin-top: 200px;
+}
 @keyframes pulse {
 	0% {
 		transform: scale(1);
@@ -1149,6 +1214,59 @@ input[type='tel']:focus {
 	margin-right: 35px;
 	top: 1100px;
 }
+
+.launch_image {
+	width: 150px;
+	position: absolute;
+	height: 150px;
+	margin-left: 930px;
+	top: 1330px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.launch_article {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	text-align: right; /* Выравнивание текста по правому краю */
+	word-wrap: break-word; /* Разрыв строк при необходимости */
+	max-width: 700px; /* Максимальная ширина текста */
+	margin: 0 auto; /* Центрирование текста по горизонтали */
+	font-weight: 400;
+	font-size: 25px;
+	margin-left: 1125px;
+	margin-right: 35px;
+	top: 1330px;
+}
+.piggy_image {
+	width: 150px;
+	position: absolute;
+	height: 150px;
+	margin-left: 930px;
+	top: 1560px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.piggy_article {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	text-align: right; /* Выравнивание текста по правому краю */
+	word-wrap: break-word; /* Разрыв строк при необходимости */
+	max-width: 700px; /* Максимальная ширина текста */
+	margin: 0 auto; /* Центрирование текста по горизонтали */
+	font-weight: 400;
+	font-size: 25px;
+	margin-left: 1100px;
+	margin-right: 35px;
+	top: 1560px;
+}
+.courses {
+	margin-top: 400px;
+}
+
 .attachment-icon {
 	width: 20px;
 	height: 20px;
@@ -1195,8 +1313,13 @@ input[type='tel']:focus {
 	height: 30px;
 	margin-left: 50px;
 }
-.title_footers {
-	padding-top: 185px;
+
+@media screen and (max-width: 1080) {
+	.title_footers {
+		padding-bottom: 185px;
+		padding-right: 0px;
+
+	}
 }
 .courses__container {
 	padding-bottom: 150px;
