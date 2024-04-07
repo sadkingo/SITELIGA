@@ -169,16 +169,22 @@ function scrollToTop() {
 document.addEventListener('DOMContentLoaded', function () {
 	var ideaImage = document.querySelector('.idea_image')
 	var deadImage = document.querySelector('.deadline_image')
+	var launchImage = document.querySelector('.launch_image')
+	var piggyImage = document.querySelector('.piggy_image')
 
 	function fadeInOnScroll() {
 		var scrollPosition = window.scrollY || window.pageYOffset
 		var windowHeight = window.innerHeight
 		var imagePosition = ideaImage.getBoundingClientRect().top
 		var imagePosition = deadImage.getBoundingClientRect().top
+		var imagePosition = launchImage.getBoundingClientRect().top
+		var imagePosition = piggyImage.getBoundingClientRect().top
 
 		if (imagePosition < windowHeight / 2) {
 			ideaImage.style.opacity = 1
 			deadImage.style.opacity = 1
+			launchImage.style.opacity = 1
+			piggyImage.style.opacity = 1
 		}
 	}
 
@@ -187,16 +193,22 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 	var budgetArticle = document.querySelector('.budget_article')
 	var deadArticle = document.querySelector('.deadline_article')
+	var launchArticle = document.querySelector('.launch_article')
+	var piggyArticle = document.querySelector('.piggy_article')
 
 	function fadeInOnScroll() {
 		var scrollPosition = window.scrollY || window.pageYOffset
 		var windowHeight = window.innerHeight
 		var articlePosition = budgetArticle.getBoundingClientRect().top
 		var articlePosition = deadArticle.getBoundingClientRect().top
+		var articlePosition = launchArticle.getBoundingClientRect().top
+		var articlePosition = piggyArticle.getBoundingClientRect().top
 
 		if (articlePosition < windowHeight / 2) {
 			budgetArticle.style.opacity = 1
 			deadArticle.style.opacity = 1
+			launchArticle.style.opacity = 1
+			piggyArticle.style.opacity = 1
 		}
 	}
 
@@ -327,6 +339,14 @@ var translations = {
 	location: {
 		en: 'Prague',
 		ru: 'Прага',
+	},
+	launch_article: {
+		en: 'We take responsibility and give results',
+		ru: 'Берем ответственность и даём результат'
+	},
+	piggy_article: {
+		en: 'We dont just "make sites", we bring customers into the business.',
+		ru: 'Мы не просто «делаем сайты», а приводим клиентов в бизнес'
 	},
 	// Добавьте другие переводы здесь
 }
