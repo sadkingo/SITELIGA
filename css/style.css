@@ -73,10 +73,12 @@ h5 {
 
 h1 {
 	font-size: 2.4rem;
+	font-weight: 600;
 }
 
 h2 {
 	font-size: 2rem;
+	font-weight: 500;
 }
 
 h3 {
@@ -802,7 +804,7 @@ input.check-toggle-round-flat:checked + label:after {
 	font-weight: 500;
 	margin-top: 50px; /* Опускаем элемент на 30 пикселей вниз */
 	margin-left: 50px;
-	margin-right: 20px;
+	margin-right: 30px;
 	width: 600px;
 }
 
@@ -812,7 +814,7 @@ input.check-toggle-round-flat:checked + label:after {
 	font-weight: 500;
 	margin-top: 30px; /* Опускаем элемент на 30 пикселей вниз */
 	margin-left: 50px;
-	margin-right: 20px;
+	margin-right: 30px;
 	width: 600px;
 }
 .title_footers {
@@ -820,6 +822,7 @@ input.check-toggle-round-flat:checked + label:after {
 	top: 2800px;
 	margin-top: 10px;
 }
+
 .portfolio {
 	position: relative;
 	top: 20px;
@@ -841,8 +844,8 @@ input.check-toggle-round-flat:checked + label:after {
 
 .title_footer3 {
 	color: #ffffff;
-	font-size: 40px;
-	margin-top: 25px; /* Опускаем элемент на 30 пикселей вниз */
+	font-size: 25px;
+	margin-top: 40px; /* Опускаем элемент на 30 пикселей вниз */
 	margin-left: 50px;
 	margin-right: 20px;
 	width: 600px;
@@ -1313,12 +1316,9 @@ input[type='tel']:focus {
 	height: 30px;
 	margin-left: 50px;
 }
-
 @media screen and (max-width: 1080) {
-	.title_footers {
-		padding-bottom: 185px;
-		padding-right: 0px;
-
+	.scrollable {
+		width: 10%;
 	}
 }
 
