@@ -39,13 +39,13 @@ body {
 .header__left {
 	text-align: center;
 	position: relative;
-right: -430px;
+	right: -430px;
 }
 @media screen and (max-width: 1080px) {
 	.header__left {
 		position: relative;
-			text-align: center;
-			right: -0px;
+		text-align: center;
+		right: -0px;
 	}
 }
 li {
@@ -192,7 +192,6 @@ nav button {
 .nav__menu a:hover {
 	color: var(--color-bg2);
 }
-
 
 /* =================== HEADER ===================== */
 header {
@@ -845,13 +844,13 @@ input.check-toggle-round-flat:checked + label:after {
 
 @media screen and (max-width: 768px) {
 	.portfolio {
-			font-size: 60px; /* Уменьшаем размер шрифта */
+		font-size: 60px; /* Уменьшаем размер шрифта */
 	}
 }
 
 @media screen and (max-width: 576px) {
 	.portfolio {
-			font-size: 40px; /* Дополнительное уменьшение размера шрифта для более маленьких экранов */
+		font-size: 40px; /* Дополнительное уменьшение размера шрифта для более маленьких экранов */
 	}
 }
 
@@ -986,7 +985,7 @@ body::-webkit-scrollbar-track {
 @media screen and (max-width: 1080px) {
 	.portfolio_border,
 	.portfolio_border2 {
-			display: none; /* Скрыть элементы */
+		display: none; /* Скрыть элементы */
 	}
 }
 @media screen and (max-width: 1080px) {
@@ -1338,7 +1337,6 @@ input[type='tel']:focus {
 	.cursor {
 		cursor: none;
 		display: none;
-
 	}
 }
 .courses__container {
@@ -1355,4 +1353,35 @@ input[type='tel']:focus {
 	width: 600px;
 	height: 500px;
 }
+/* ---- reset ---- */
 
+canvas {
+	display: block;
+	vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #141414;
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+} /* ---- stats.js ---- */
+.js-count-particles {
+	font-size: 1.1em;
+}
+#stats,
+.count-particles {
+	-webkit-user-select: none;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#stats {
+	border-radius: 3px 3px 0 0;
+	overflow: hidden;
+}
+.count-particles {
+	border-radius: 0 0 3px 3px;
+}
