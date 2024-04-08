@@ -352,5 +352,9 @@ var translations = {
 		en: 'We dont just "make sites", we bring customers into the business.',
 		ru: 'Мы не просто «делаем сайты», а приводим клиентов в бизнес'
 	},
+	send_button: {
+		en: 'SEND',
+		ru: 'ОТПРАВИТЬ'
+	},
 	// Добавьте другие переводы здесь
 }
