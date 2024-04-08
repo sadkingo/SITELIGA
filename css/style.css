@@ -1321,6 +1321,14 @@ input[type='tel']:focus {
 
 	}
 }
+
+@media screen and (max-width: 1080) {
+	.cursor {
+		cursor: none;
+		display: none;
+
+	}
+}
 .courses__container {
 	padding-bottom: 150px;
 }
