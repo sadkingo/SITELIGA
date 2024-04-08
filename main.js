@@ -221,8 +221,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
 var translations = {
 	home: {
 		en: 'Home',
@@ -362,3 +360,4 @@ var translations = {
 	},
 	// Добавьте другие переводы здесь
 }
+
