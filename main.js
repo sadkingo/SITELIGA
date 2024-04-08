@@ -47,6 +47,7 @@ faqs.forEach(faq => {
 // Получаем ссылки на элементы
 // Получаем ссылки на элементы
 var modal = document.getElementById('myModal')
+var openModal2 = document.getElementById('openModal2')
 var btns = document.querySelectorAll('.btn')
 var span = document.querySelector('.close')
 
@@ -55,18 +56,21 @@ btns.forEach(function (btn) {
 	btn.addEventListener('click', function (event) {
 		event.preventDefault() // предотвращаем действие по умолчанию
 		modal.style.display = 'block'
+		openModal2.style.display = 'block'
 	})
 })
 
 // При клике на закрывающий элемент закрываем модальное окно
 span.addEventListener('click', function () {
 	modal.style.display = 'none'
+	openModal2.style.display = 'none'
 })
 
 // При клике вне модального окна закрываем его
 window.addEventListener('click', function (event) {
-	if (event.target == modal) {
+	if (event.target == modal | openModal2) {
 		modal.style.display = 'none'
+		openModal2.style.display = 'none'
 	}
 })
 
@@ -302,7 +306,7 @@ var translations = {
 	},
 	rest: {
 		en: "And we'll do the rest!",
-		ru: 'Остальное сделаем мы!',
+		ru: 'остальное сделаем мы!',
 	},
 	budget_article: {
 		en: 'We find the best solution based on business objectives and within budget',
