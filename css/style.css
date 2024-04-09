@@ -8,10 +8,10 @@
 }
 
 :root {
-	--color-primary: #fd0037;
+	--color-primary: #433EFF;
 	--color-success: #00bf8e;
 	--color-warning: #f7c94b;
-	--color-danger: #fd0037;
+	--color-danger: #433EFF;
 	--color-danger-variant: rgba(247, 88, 66, 0.4);
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.7);
@@ -691,7 +691,7 @@ nav button#close-menu-btn {
 	}
 	.dot {
 		border-radius: 50%;
-		color: #fd0037;
+		color: #433EFF;
 		margin-left: 1000;
 	}
 }
@@ -756,7 +756,7 @@ input.check-toggle-round-flat + label {
 	padding: 2px;
 	width: 97px;
 	height: 40px;
-	background-color: #fd0037;
+	background-color: #433EFF;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	-ms-border-radius: 60px;
@@ -775,7 +775,7 @@ input.check-toggle-round-flat + label:before {
 	left: 2px;
 	bottom: 2px;
 	right: 2px;
-	background-color: #fd0037;
+	background-color: #433EFF;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	-ms-border-radius: 60px;
@@ -812,14 +812,14 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-	background: #fd0037; /* Цвет ползунка панели прокрутки */
+	background: #433EFF; /* Цвет ползунка панели прокрутки */
 }
 .scrollable-content p {
 	font-size: 10px; /* Размер шрифта */
 }
 
 .title_footer {
-	color: #fd0037;
+	color: #433EFF;
 	font-size: 55px;
 	font-weight: 500;
 	margin-top: 50px; /* Опускаем элемент на 30 пикселей вниз */
@@ -960,7 +960,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #fd0037; /* Цвет ползунка */
+	background-color: #433EFF; /* Цвет ползунка */
 }
 
 body::-webkit-scrollbar-track {
@@ -1127,7 +1127,7 @@ body::-webkit-scrollbar-track {
 }
 .submit__button {
 	display: flex;
-	background-color: #fd0037;
+	background-color: #433EFF;
 	color: white;
 	width: 500px;
 	margin-top: 10px;
@@ -1182,7 +1182,7 @@ input[type='tel']:focus {
 .file-upload-label {
 	margin-left: 300px;
 	position: relative;
-	color: #fd0037;
+	color: #433EFF;
 	top: -28px;
 }
 .file-instruction {
@@ -1457,7 +1457,7 @@ input[type='tel']:focus {
 	top: 605px;
 }
 .btn-primary2 {
-	background-color: #fd0037;
+	background-color: #433EFF;
 	color: white;
 	height: 5rem;
 	width: 430px;
