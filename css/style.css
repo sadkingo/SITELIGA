@@ -1204,6 +1204,14 @@ input[type='tel']:focus {
 	margin-right: 35px;
 	top: 870px;
 }
+@media screen and (max-width: 1080px) {
+	.budget_article,
+	.idea_image{
+		position: absolute;
+		top: 2000px;
+		left: -930px;
+	}
+}
 .deadline_image {
 	width: 150px;
 	position: absolute;
@@ -1228,7 +1236,14 @@ input[type='tel']:focus {
 	margin-right: 35px;
 	top: 1100px;
 }
-
+@media screen and (max-width: 1080px) {
+	.deadline_article,
+	.deadline_image {
+		position: absolute;
+		top: 1800px;
+		left: -930px;
+	}
+}
 .launch_image {
 	width: 150px;
 	position: absolute;
@@ -1252,6 +1267,14 @@ input[type='tel']:focus {
 	margin-left: 1125px;
 	margin-right: 35px;
 	top: 1330px;
+}
+@media screen and (max-width: 1080px) {
+	.launch_article,
+	.launch_image {
+		position: absolute;
+		top: 1400px;
+		left: -950px;
+	}
 }
 .piggy_image {
 	width: 150px;
@@ -1277,10 +1300,55 @@ input[type='tel']:focus {
 	margin-right: 35px;
 	top: 1560px;
 }
+
+@media screen and (max-width: 1080px) {
+	.piggy_article,
+	.piggy_image {
+		position: absolute;
+		top: 1600px;
+		left: -930px;
+	}
+}
 .courses {
 	margin-top: 400px;
 }
 
+@media screen and (max-width: 1080px) {
+	.courses {
+		margin-top: 1500px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.portfolio {
+			position: relative;
+			margin-bottom: 400px;
+			font-size: 40px;
+		}
+	}
+
+	@media screen and (max-width: 1080px) {
+		.title_footers {
+			display: none;
+			}
+		}
+
+		@media screen and (max-width: 1080px) {
+			.scrollable {
+				width: 80%;
+				}
+			}
+			@media screen and (max-width: 1080px) {
+				.categories {
+					padding-top: 100px;
+					}
+				}
+				@media screen and (max-width: 1080px) {
+					.header__left {
+						position: absolute;
+						text-align: center;
+						}
+					}
 .attachment-icon {
 	width: 20px;
 	height: 20px;
