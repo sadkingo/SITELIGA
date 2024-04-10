@@ -1,9 +1,22 @@
+@keyframes slideInFromLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
 .contacts_heading {
   font-size: 120px;
   margin-left: 50px;
   margin-top: 100px;
   font-weight: 500;
+  animation: slideInFromLeft 1s ease forwards; /* Анимация для заголовка */
 }
+
 .contact_us {
   position: relative;
   font-size: 50px;
@@ -11,7 +24,10 @@
   top: -60px;
   font-weight: 500;
   color: #433EFF;
+  opacity: 0; /* Изначально скрыт */
+  animation: slideInFromLeft 1s ease forwards 0.5s; /* Анимация для текста */
 }
+
 .phone_number {
   position: relative;
   margin-left: 1200px;
