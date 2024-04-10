@@ -366,6 +366,10 @@ var translations = {
 		en: 'Click!',
 		ru: 'Нажимай!'
 	},
+	portfolio2_desc: {
+		en: 'We have created over 20 projects of high quality within 6 months. We have avoided showing you the entire portfolio by selecting only the most interesting projects on various topics.',
+		ru: 'За 6 месяцев мы создали более 20 качественных проектов. Мы не стали показывать вам все портфолио, выбрав только самые интересные проекты по различным тематикам.'
+	},
 	// Добавьте другие переводы здесь
 }
 
