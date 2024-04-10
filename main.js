@@ -378,6 +378,10 @@ var translations = {
 		en: 'Contact us',
 		ru: 'Свяжитесь с нами'
 	},
+	vacancies: {
+		en: 'Vacancies',
+		ru: 'Вакансии'
+	},
 	// Добавьте другие переводы здесь
 }
 
