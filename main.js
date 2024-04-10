@@ -339,8 +339,8 @@ var translations = {
 		ru: 'ОСТАВИТЬ ЗАЯВКУ',
 	},
 	title_browser: {
-		en: 'ATLANTSITE: Website development in the Czech Republic - WEB-Development',
-		ru: 'ATLANTSITE: Создание сайтов в Чехии - WEB-Разработка',
+		en: 'SITELIGA: Website development in the Czech Republic - WEB-Development',
+		ru: 'SITELIGA: Создание сайтов в Чехии - WEB-Разработка',
 	},
 	location: {
 		en: 'Prague',
@@ -357,6 +357,14 @@ var translations = {
 	send_button: {
 		en: 'SEND',
 		ru: 'ОТПРАВИТЬ'
+	},
+	first_heading: {
+		en: 'Do you want your site to be on this list as well??',
+		ru: 'Хочешь, чтобы твой сайт также был в этом списке?'
+	},
+	second_word: {
+		en: 'Click!',
+		ru: 'Нажимай!'
 	},
 	// Добавьте другие переводы здесь
 }
