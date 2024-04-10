@@ -370,6 +370,14 @@ var translations = {
 		en: 'We have created over 20 projects of high quality within 6 months. We have avoided showing you the entire portfolio by selecting only the most interesting projects on various topics.',
 		ru: 'За 6 месяцев мы создали более 20 качественных проектов. Мы не стали показывать вам все портфолио, выбрав только самые интересные проекты по различным тематикам.'
 	},
+	contacts_heading: {
+		en: 'Contacts',
+		ru: 'Контакты'
+	},
+	contact_us: {
+		en: 'Contact us',
+		ru: 'Свяжитесь с нами'
+	},
 	// Добавьте другие переводы здесь
 }
 
