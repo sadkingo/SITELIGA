@@ -1,12 +1,20 @@
 .contacts_heading {
   font-size: 120px;
-  margin-left: 200px;
+  margin-left: 50px;
   margin-top: 100px;
+  font-weight: 500;
 }
 .contact_us {
   position: relative;
   font-size: 50px;
-  margin-left: 200px;
+  margin-left: 50px;
   top: -60px;
+  font-weight: 500;
   color: #433EFF;
+}
+.phone_number {
+  position: relative;
+  margin-left: 1200px;
+  font-size: 50px;
+  top: -950px;
 }
