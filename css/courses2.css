@@ -65,13 +65,26 @@
 	top: -640px;
 	left: 400px; /* Сдвигаем картинку курсора наискосок при наведении */
 }
+@keyframes slideInFromLeft {
+	0% {
+			opacity: 0;
+			transform: translateX(-100%);
+	}
+	100% {
+			opacity: 1;
+			transform: translateX(0);
+	}
+}
+
 .portfolio2 {
 	position: relative;
 	top: 50px;
 	margin-left: 70px;
 	font-size: 115px;
 	font-weight: 500;
+	animation: slideInFromLeft 1s ease forwards; /* Анимация появления с лева */
 }
+
 .portfolio2_desc {
 	position: relative;
 	width: 1500px;
