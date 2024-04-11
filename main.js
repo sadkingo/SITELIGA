@@ -171,53 +171,58 @@ function scrollToTop() {
 	}, 15)
 }
 document.addEventListener('DOMContentLoaded', function () {
-	var ideaImage = document.querySelector('.idea_image')
-	var deadImage = document.querySelector('.deadline_image')
-	var launchImage = document.querySelector('.launch_image')
-	var piggyImage = document.querySelector('.piggy_image')
+	var ideaImage = document.querySelector('.idea_image');
+	var deadImage = document.querySelector('.deadline_image');
+	var launchImage = document.querySelector('.launch_image');
+	var piggyImage = document.querySelector('.piggy_image');
 
-	function fadeInOnScroll() {
-		var scrollPosition = window.scrollY || window.pageYOffset
-		var windowHeight = window.innerHeight
-		var imagePosition = ideaImage.getBoundingClientRect().top
-		var imagePosition = deadImage.getBoundingClientRect().top
-		var imagePosition = launchImage.getBoundingClientRect().top
-		var imagePosition = piggyImage.getBoundingClientRect().top
+	var budgetArticle = document.querySelector('.budget_article');
+	var deadArticle = document.querySelector('.deadline_article');
+	var launchArticle = document.querySelector('.launch_article');
+	var piggyArticle = document.querySelector('.piggy_article');
 
-		if (imagePosition < windowHeight / 2) {
-			ideaImage.style.opacity = 1
-			deadImage.style.opacity = 1
-			launchImage.style.opacity = 1
-			piggyImage.style.opacity = 1
-		}
+	function fadeInOnScrollImage(element) {
+			var scrollPosition = window.scrollY || window.pageYOffset;
+			var windowHeight = window.innerHeight;
+			var imagePosition = element.getBoundingClientRect().top;
+
+			if (imagePosition < windowHeight / 2) {
+					element.style.opacity = 1;
+			}
 	}
 
-	window.addEventListener('scroll', fadeInOnScroll)
-})
-document.addEventListener('DOMContentLoaded', function () {
-	var budgetArticle = document.querySelector('.budget_article')
-	var deadArticle = document.querySelector('.deadline_article')
-	var launchArticle = document.querySelector('.launch_article')
-	var piggyArticle = document.querySelector('.piggy_article')
+	function fadeInOnScrollArticle(element) {
+			var scrollPosition = window.scrollY || window.pageYOffset;
+			var windowHeight = window.innerHeight;
+			var articlePosition = element.getBoundingClientRect().top;
 
-	function fadeInOnScroll() {
-		var scrollPosition = window.scrollY || window.pageYOffset
-		var windowHeight = window.innerHeight
-		var articlePosition = budgetArticle.getBoundingClientRect().top
-		var articlePosition = deadArticle.getBoundingClientRect().top
-		var articlePosition = launchArticle.getBoundingClientRect().top
-		var articlePosition = piggyArticle.getBoundingClientRect().top
-
-		if (articlePosition < windowHeight / 2) {
-			budgetArticle.style.opacity = 1
-			deadArticle.style.opacity = 1
-			launchArticle.style.opacity = 1
-			piggyArticle.style.opacity = 1
-		}
+			if (articlePosition < windowHeight / 2) {
+					element.style.opacity = 1;
+			}
 	}
 
-	window.addEventListener('scroll', fadeInOnScroll)
-})
+	function fadeInElementsOnScroll() {
+			fadeInOnScrollImage(ideaImage);
+			fadeInOnScrollArticle(budgetArticle);
+
+			setTimeout(function () {
+					fadeInOnScrollImage(deadImage);
+					fadeInOnScrollArticle(deadArticle);
+			}, 300);
+
+			setTimeout(function () {
+					fadeInOnScrollImage(launchImage);
+					fadeInOnScrollArticle(launchArticle);
+			}, 600);
+
+			setTimeout(function () {
+					fadeInOnScrollImage(piggyImage);
+					fadeInOnScrollArticle(piggyArticle);
+			}, 900);
+	}
+
+	window.addEventListener('scroll', fadeInElementsOnScroll);
+});
 
 
 
