@@ -1527,6 +1527,20 @@ input[type='tel']:focus {
 	height: 30px;
 	margin-left: 50px;
 }
+.phone_icon {
+	position: relative;
+	top: -30px;
+	width: 30px;
+	height: 30px;
+	margin-left: 50px;
+}
+
+.phone {
+	font-weight: 400;
+	margin-left: 100px;
+	margin-top: 60px;
+	font-size: 30px;
+}
 
 .location {
 	font-weight: 400;
@@ -1598,4 +1612,8 @@ canvas {
 }
 .count-particles {
 	border-radius: 0 0 3px 3px;
+}
+#title_footers3 {
+	position: relative;
+	top: -800px;
 }
