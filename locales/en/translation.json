@@ -1,3 +1,31 @@
 {
-	"languageName": "English"
+	"site_creation": {
+		"title": "Website Creation in Czechia",
+		"process": "Website creation is a complex process involving multiple IT specialists of different profiles. Today, almost every company has taken their business online. Development and launch of a website go through several stages. Only thorough preparation allows implementing a project that brings business results. Therefore, choosing a contractor should be taken seriously.",
+		"studio": "Our web studio in Prague, ATLANTSITE, develops landing pages, e-commerce platforms, turnkey corporate resources for various business niches, and of any level of complexity.",
+		"contact": "If you are interested in website development in Czechia, contact our IT company. We will help you solve IT tasks of any complexity.",
+		"turnkey": "Turnkey Website Creation",
+		"turnkey_service": "Turnkey website creation is a service for the full cycle of website development, starting from market research and project design to project launch and subsequent maintenance, advertising setup, SEO, etc. At the same time, promotion is not always included in the price of the order.",
+		"web_development": "WEB-site development includes the following actions:",
+		"market_analysis": "Market analysis and competitor solutions, study of the client's business, and research of the target audience who will use the resource;",
+		"planning": "Project planning and detailed project structure based on the collected data;",
+		"prototype": "Project prototype creation, discussion, and approval;",
+		"design": "Design drawing;",
+		"markup": "Layout and programming;",
+		"testing": "Testing;",
+		"optimization": "Optimization and content filling;",
+		"delivery": "Final adjustments and delivery.",
+		"additional_steps": "These are the main stages that our company performs when creating a website. But if desired, the client can order advertising setup, promotion, etc. Also, upon project delivery, we train the client's employees to use the interface and administer the site.",
+		"cost": "Factors Affecting Website Creation Cost",
+		"cost_factors": "Often, before ordering website creation, clients are interested in how much this service will cost. You can find out the price after talking to a manager. The project budget can change due to many factors:",
+		"type": "The type of site that the client is interested in;",
+		"pages": "The estimated number of pages;",
+		"features": "Desired set of functions;",
+		"time": "Time for project development;",
+		"team": "The number and qualification of specialists involved in development.",
+		"project_duration": "On average, website creation takes 1-4 months. Depending on the project goals, we apply both template and custom solutions. For example, the design can be standard, while the functionality is specially developed for this website.",
+		"why_atlantsite": "Why Trust ATLANTSITE Team with Website Creation",
+		"atlantsite_experience": "Our IT company has extensive experience in creating and promoting websites of varying complexity. We take into account the client's requirements and offer optimal solutions. Our projects are effective and allow businesses to achieve their goals. We have experienced specialists who can launch even the most complex projects. Your WEB resource will become a powerful foundation for promoting and developing your company.",
+		"client_requirements": ""
+	}
 }
