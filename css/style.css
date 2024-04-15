@@ -824,7 +824,20 @@ input.check-toggle-round-flat:checked + label:after {
 .scrollable-content p {
 	font-size: 10px; /* Размер шрифта */
 }
+.ouraprouch::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	width: 0;
+	height: 10px;
+	background-color: #433EFF;
+	transition: width 0.3s ease;
+}
 
+.ouraprouch:hover::after {
+	width: 45%;
+}
 .title_footer {
 	color: #433EFF;
 	font-size: 55px;
