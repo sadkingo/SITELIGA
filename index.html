@@ -97,19 +97,19 @@
 		<!--========================== END OF NAVBAR ============================-->
 
 		<header>
-<!-- particles.js container -->
-<div id="particles-js"></div>
+			<!-- particles.js container -->
+			<div id="particles-js"></div>
 
-<!-- stats - count particles -->
-<div class="count-particles">
-  <span class="js-count-particles"></span>
-</div>
+			<!-- stats - count particles -->
+			<div class="count-particles">
+				<span class="js-count-particles"></span>
+			</div>
 
-<!-- particles.js lib -->
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+			<!-- particles.js lib -->
+			<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-<!-- stats.js lib -->
-<script src="//threejs.org/examples/js/libs/stats.min.js"></script>
+			<!-- stats.js lib -->
+			<script src="//threejs.org/examples/js/libs/stats.min.js"></script>
 
 			<div class="container header__container">
 				<div class="header__left">
@@ -208,24 +208,20 @@
 					We respect the deadlines, budget and level of quality of the project
 				</h1>
 				<img
-				class="launch_image"
-				src="./images/launch_mobile_devise.png"
-				alt="launch__image"
-			/>
-			<h1 data-i18n="launch_article" class="launch_article">
-				We take responsibility and give results
-			</h1>
-			<img
-			class="piggy_image"
-			src="./images/piggy.png"
-			alt="launch__image"
-		/>
-		<h1 data-i18n="piggy_article" class="piggy_article">
-			We don't just "make sites", we bring customers into the business.
-		</h1>
+					class="launch_image"
+					src="./images/launch_mobile_devise.png"
+					alt="launch__image"
+				/>
+				<h1 data-i18n="launch_article" class="launch_article">
+					We take responsibility and give results
+				</h1>
+				<img class="piggy_image" src="./images/piggy.png" alt="launch__image" />
+				<h1 data-i18n="piggy_article" class="piggy_article">
+					We don't just "make sites", we bring customers into the business.
+				</h1>
 			</div>
 		</section>
-						<!--========================== start OF specialization section ============================-->
+		<!--========================== start OF specialization section ============================-->
 
 		<!--====================== END OF CATEGORIES =====================-->
 
@@ -347,7 +343,9 @@
 				проекта и его последующего ведения, настройки рекламы, SEO и т.д. При
 				этом продвижение не всегда входит в цену заказа.
 			</p>
-			<p data-i18n="paragraph_n5">Разработка WEB-сайта включает в себя выполнение следующих действий:</p>
+			<p data-i18n="paragraph_n5">
+				Разработка WEB-сайта включает в себя выполнение следующих действий:
+			</p>
 			<ol>
 				<li data-i18n="li_n6">
 					анализ рынка и решений конкурентов, изучение бизнеса клиента и
@@ -357,7 +355,9 @@
 					планирование и детальная проработка структуры проекта на основе
 					полученных данных;
 				</li>
-				<li data-i18n="li_n8">создание прототипа проекта, его обсуждение и утверждение;</li>
+				<li data-i18n="li_n8">
+					создание прототипа проекта, его обсуждение и утверждение;
+				</li>
 				<li data-i18n="li_n9">отрисовка дизайна;</li>
 				<li data-i18n="li_n10">верстка и программирование;</li>
 				<li data-i18n="li_n11">тестирование;</li>
@@ -394,7 +394,9 @@
 				для этого веб-ресурса.
 			</p>
 
-			<h2 data-i18n="heading_n5">Почему создание сайта лучше доверить команде SITELIGA</h2>
+			<h2 data-i18n="heading_n5">
+				Почему создание сайта лучше доверить команде SITELIGA
+			</h2>
 			<p data-i18n="paragraph_n9">
 				Наша ИТ-компания имеет большой опыт в создании и продвижении
 				веб-ресурсов разной сложности. Мы учитываем требования заказчика и
@@ -409,8 +411,8 @@
 			<h2 data-i18n="rest" class="title_footer2">остальное</h2>
 			<h3 class="email">siteliga865@gmail.com</h3>
 			<img class="email_icon" src="./images/mail.png" alt="email" />
-			<h3 class='phone'>+972 50-697-1712</h3>
-			<img class='phone_icon' src="./images/phone-call.png" alt="">
+			<h3 class="phone">+972 50-697-1712</h3>
+			<img class="phone_icon" src="./images/phone-call.png" alt="" />
 			<h3 data-i18n="location" class="location">Prague</h3>
 			<img class="location_icon" src="./images/location.png" alt="location" />
 			<a
@@ -478,14 +480,6 @@
 			</div>
 		</div>
 		<footer>
-			<div class="social-buttons">
-				<button id="socialButton"><span><img src="./images/chat-bubble.png" alt=""></span></button>
-				<div class="social-icons">
-					<a href="#"><img src="facebook.png" alt="Facebook"></a>
-					<a href="#"><img src="twitter.png" alt="Twitter"></a>
-					<a href="#"><img src="instagram.png" alt="Instagram"></a>
-				</div>
-			</div>
 			<script src="btn.js"></script>
 			<div class="footer__1">
 				<a href="index.html" id="logo_footer"
@@ -537,4 +531,40 @@
 
 		<script src="main.js"></script>
 	</body>
+	<script type="module">
+		import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js'
+
+		const widget = await Chatbox.initBubble({
+			agentId: 'clv12dinj00qqq08iw9gfjgs2',
+
+			// optional
+			// If provided will create a contact for the user and link it to the conversation
+			contact: {
+				firstName: 'Peter',
+				lastName: 'Baikov',
+				email: 'siteliga865@gmail.com',
+				phoneNumber: '+972 50-697-1712',
+				userId: '42424242',
+			},
+			// optional
+			// Override initial messages
+			initialMessages: [
+				'Hello Georges how are you doing today?',
+				'How can I help you ?',
+			],
+			// optional
+			// Provided context will be appended to the Agent system prompt
+			context:
+				'The user you are talking to has no name. there is no need to  greet him',
+		})
+
+		// open the chat bubble
+		widget.open()
+
+		// close the chat bubble
+		widget.close()
+
+		// or
+		widget.toggle()
+	</script>
 </html>
