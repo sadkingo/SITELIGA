@@ -40,7 +40,9 @@ body {
 	background-color: var(--color-bg);
 	overflow-x: hidden;
 }
-
+.flexbook-section {
+	height: 50%;
+}
 .header__left {
 	text-align: center;
 	position: relative;
