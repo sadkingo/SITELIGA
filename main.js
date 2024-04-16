@@ -7,6 +7,7 @@ let nav = document.querySelector('nav')
 // Показываем навигационное меню при загрузке страницы
 nav.classList.add('nav-show')
 
+
 window.addEventListener('scroll', () => {
 	let currentScrollPos = window.pageYOffset
 
