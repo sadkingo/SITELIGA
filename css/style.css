@@ -70,7 +70,9 @@ li {
 	font-size: 100px;
 	margin-left: 80px;
 }
-
+.scroll_section {
+	height: 90%;
+}
 .dedicated {
 	font-size: 75px;
 }
