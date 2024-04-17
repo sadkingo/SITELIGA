@@ -8,10 +8,10 @@
 }
 
 :root {
-	--color-primary: #433EFF;
+	--color-primary: #433eff;
 	--color-success: #00bf8e;
 	--color-warning: #f7c94b;
-	--color-danger: #433EFF;
+	--color-danger: #433eff;
 	--color-danger-variant: rgba(247, 88, 66, 0.4);
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.7);
@@ -26,10 +26,10 @@
 
 	--transition: all 400ms ease;
 }
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-    color: white; /* Замените white на любой другой цвет, который вы хотите использовать */
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+	color: white; /* Замените white на любой другой цвет, который вы хотите использовать */
 }
 
 body {
@@ -702,7 +702,7 @@ nav button#close-menu-btn {
 	}
 	.dot {
 		border-radius: 50%;
-		color: #433EFF;
+		color: #433eff;
 		margin-left: 1000;
 	}
 }
@@ -767,7 +767,7 @@ input.check-toggle-round-flat + label {
 	padding: 2px;
 	width: 97px;
 	height: 40px;
-	background-color: #433EFF;
+	background-color: #433eff;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	-ms-border-radius: 60px;
@@ -786,7 +786,7 @@ input.check-toggle-round-flat + label:before {
 	left: 2px;
 	bottom: 2px;
 	right: 2px;
-	background-color: #433EFF;
+	background-color: #433eff;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	-ms-border-radius: 60px;
@@ -823,7 +823,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-	background: #433EFF; /* Цвет ползунка панели прокрутки */
+	background: #433eff; /* Цвет ползунка панели прокрутки */
 }
 .scrollable-content p {
 	font-size: 10px; /* Размер шрифта */
@@ -835,7 +835,7 @@ input.check-toggle-round-flat:checked + label:after {
 	bottom: -20px;
 	width: 0;
 	height: 10px;
-	background-color: #433EFF;
+	background-color: #433eff;
 	transition: width 0.3s ease;
 }
 
@@ -843,7 +843,7 @@ input.check-toggle-round-flat:checked + label:after {
 	width: 45%;
 }
 .title_footer {
-	color: #433EFF;
+	color: #433eff;
 	font-size: 55px;
 	font-weight: 500;
 	margin-top: 50px; /* Опускаем элемент на 30 пикселей вниз */
@@ -881,7 +881,6 @@ input.check-toggle-round-flat:checked + label:after {
 		height: 100%;
 	}
 }
-
 
 .portfolio {
 	position: relative;
@@ -1000,7 +999,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #433EFF; /* Цвет ползунка */
+	background-color: #433eff; /* Цвет ползунка */
 }
 
 body::-webkit-scrollbar-track {
@@ -1194,7 +1193,7 @@ body::-webkit-scrollbar-track {
 }
 .submit__button {
 	display: flex;
-	background-color: #433EFF;
+	background-color: #433eff;
 	color: white;
 	width: 500px;
 	margin-top: 10px;
@@ -1249,7 +1248,7 @@ input[type='tel']:focus {
 .file-upload-label {
 	margin-left: 300px;
 	position: relative;
-	color: #433EFF;
+	color: #433eff;
 	top: -28px;
 }
 .file-instruction {
@@ -1281,7 +1280,7 @@ input[type='tel']:focus {
 }
 @media screen and (max-width: 1080px) {
 	.budget_article,
-	.idea_image{
+	.idea_image {
 		position: absolute;
 		top: 2200px;
 		left: -930px;
@@ -1409,109 +1408,108 @@ input[type='tel']:focus {
 
 @media screen and (max-width: 1080px) {
 	.portfolio {
-			position: relative;
-			margin-bottom: 400px;
-			font-size: 40px;
-		}
+		position: relative;
+		margin-bottom: 400px;
+		font-size: 40px;
 	}
+}
 
-	@media screen and (max-width: 1080px) {
-		.title_footers {
-			display: none;
-			}
-		}
+@media screen and (max-width: 1080px) {
+	.title_footers {
+		display: none;
+	}
+}
 
-		@media screen and (max-width: 1080px) {
-			.scrollable {
-				width: 80%;
-				}
-			}
-			@media screen and (max-width: 1080px) {
-				.categories {
-					padding-top: 100px;
-					}
-				}
-				@media screen and (max-width: 1080px) {
-					.header__left {
-						position: absolute;
-						text-align: center;
-						}
-					}
-					
-					@media screen and (max-width: 1080px) {
-						.modal-content {
-							width: 80%;
-							}
-						}
-						@media screen and (max-width: 430px) {
-							.modal-content {
-								width: 70%;
-								height: 80%;
-								}
-							}
+@media screen and (max-width: 1080px) {
+	.scrollable {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.categories {
+		padding-top: 100px;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.header__left {
+		position: absolute;
+		text-align: center;
+	}
+}
 
-						@media screen and (max-width: 1080px) {
-							.submit__button{
-								margin-left: 50px;
-								}
-							}
-						
-							@media screen and (max-width: 430px) {
-								.submit__button{
-									width: 70%;
-									}
-								}
+@media screen and (max-width: 1080px) {
+	.modal-content {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 430px) {
+	.modal-content {
+		width: 70%;
+		height: 80%;
+	}
+}
 
-								@media screen and (max-width: 390px) {
-									.submit__button{
-										width: 60%;
-										}
-									}
+@media screen and (max-width: 1080px) {
+	.submit__button {
+		margin-left: 50px;
+	}
+}
 
-									@media screen and (max-width: 390px) {
-										.modal-content {
-											width: 70%;
-											height: 90%;
-											}
-										}
-										@media screen and (max-width: 375px) {
-											.modal-content {
-												width: 70%;
-												height: 100%;
-												}
-											}
+@media screen and (max-width: 430px) {
+	.submit__button {
+		width: 70%;
+	}
+}
 
-											@media screen and (min-width: 1024px) {
-												.ouraprouch{
-													font-size: 100px;
-													}
-												}
+@media screen and (max-width: 390px) {
+	.submit__button {
+		width: 60%;
+	}
+}
 
-												@media screen and (min-width: 768px) {
-													.ouraprouch{
-														font-size: 100px;
-														}
-													}
+@media screen and (max-width: 390px) {
+	.modal-content {
+		width: 70%;
+		height: 90%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.modal-content {
+		width: 70%;
+		height: 100%;
+	}
+}
 
-													@media screen and (min-width: 768px) {
-														.ouraprouch{
-															font-size: 100px;
-															}
-														}
-														@media screen and (min-width: 390px) {
-															.ouraprouch{
-																position: relative;
-																top: -100px;
-																}
-															}
+@media screen and (min-width: 1024px) {
+	.ouraprouch {
+		font-size: 100px;
+	}
+}
 
-													@media screen and (min-width: 390px) {
-														.dedicated{
-															font-size: 60px;
-															}
-														}
-												
-												
+@media screen and (min-width: 768px) {
+	.ouraprouch {
+		font-size: 100px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.ouraprouch {
+		font-size: 100px;
+	}
+}
+@media screen and (min-width: 390px) {
+	.ouraprouch {
+		position: relative;
+		top: -100px;
+	}
+}
+
+@media screen and (min-width: 390px) {
+	.dedicated {
+		font-size: 60px;
+	}
+}
+
 .attachment-icon {
 	width: 20px;
 	height: 20px;
@@ -1524,7 +1522,7 @@ input[type='tel']:focus {
 	top: 605px;
 }
 .btn-primary2 {
-	background-color: #433EFF;
+	background-color: #433eff;
 	color: white;
 	height: 5rem;
 	width: 430px;
@@ -1633,4 +1631,43 @@ canvas {
 #title_footers3 {
 	position: relative;
 	top: -800px;
+}
+
+.info_article {
+	position: relative;
+	display: flex;
+	font-weight: 500;
+	flex-direction: column; /* Изменяем направление главной оси на вертикальное */
+	font-size: 80px;
+	margin-left: 50px;
+}
+
+.second_info_article {
+	text-align: left;
+	margin-left: 50px;
+	font-size: 40px;
+	margin-top: 15px;
+}
+.email_bottom {
+	text-align: left;
+	font-weight: 400;
+	margin-left: 50px;
+	font-size: 40px;
+	margin-top: 25px;
+}
+.mail_img {
+	width: 50px;
+	height: 50px;
+	margin-left: 50px;
+}
+.phonenum_bottom {
+	text-align: left;
+	font-weight: 400;
+	margin-left: 50px;
+	font-size: 40px;
+	margin-top: 25px;
+}
+.contact__bottom {
+	position: absolute;
+	top: 3420px;
 }
