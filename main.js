@@ -520,7 +520,10 @@ contact: {
 	en: 'Contacts',
 	ru: 'Контакты'
 },
-
+placeholder_text: {
+	en: 'SEND',
+	ru: 'ОТПРАВИТЬ'
+},
 
 
 
