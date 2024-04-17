@@ -516,7 +516,10 @@ paragraph_n9: {
 	en: "Our IT company has extensive experience in creating and promoting web resources of various complexities. We take into account the client's requirements and offer optimal solutions. Our projects are effective and enable businesses to achieve their goals. We have experienced specialists who can handle even the most complex projects. Your web resource will become a powerful foundation for the promotion and development of your company.",
 	ru: "Наша ИТ-компания имеет обширный опыт в создании и продвижении веб-ресурсов различной сложности. Мы учитываем требования клиента и предлагаем оптимальные решения. Наши проекты эффективны и позволяют бизнесу достигать поставленных целей. У нас работают опытные специалисты, которые могут справиться даже с самыми сложными проектами. Ваш веб-ресурс станет мощным фундаментом для продвижения и развития вашей компании."
 },
-
+contact: {
+	en: 'Contacts',
+	ru: 'Контакты'
+},
 
 
 
