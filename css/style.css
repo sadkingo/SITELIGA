@@ -18,7 +18,7 @@
 	--color-black: #000;
 	--color-bg: #1e0c45;
 	--color-bg1: #141414;
-	--color-bg2: #1c1c1c;
+	--color-bg2: #433eff;
 
 	--container-width-lg: 80%;
 	--container-width-md: 90%;
@@ -41,8 +41,10 @@ body {
 	overflow-x: hidden;
 }
 .flexbook-section {
+	margin-top: 500px;
 	height: 50%;
 }
+
 .header__left {
 	text-align: center;
 	position: relative;
@@ -492,101 +494,58 @@ h4 {
 }
 
 /* ====================== NAVBAR ===================== */
-/* Общие стили для кнопок */
-nav button {
-	display: inline-block;
-	background: transparent;
-	font-size: 1.8rem;
-	color: var(--color-white);
-	cursor: pointer;
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
-/* Скрыть кнопку закрытия меню на мобильных устройствах */
-nav button#close-menu-btn {
-	display: none;
+.navbar-brand {
+  float: left;
 }
 
-/* Стили для меню */
-.nav__menu {
-	position: fixed;
-	top: 5rem;
-	right: 5%;
-	height: fit-content;
-	width: 18rem;
-	flex-direction: column;
-	gap: 0;
-	display: none;
+.navbar-toggle {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
-/* Анимация для пунктов меню */
-.nav__menu li {
-	width: 100%;
-	height: 5.8rem;
-	animation: animateNavItems 400ms linear forwards;
-	transform-origin: top right;
-	opacity: 0;
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
-.nav__menu li:nth-child(2) {
-	animation-delay: 200ms;
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  overflow-y: auto;
 }
 
-.nav__menu li:nth-child(3) {
-	animation-delay: 400ms;
+.menu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-.nav__menu li:nth-child(4) {
-	animation-delay: 600ms;
+.menu a:hover {
+  background-color: #ddd;
 }
-
-@keyframes animateNavItems {
-	0% {
-		transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
-	}
-
-	100% {
-		transform: rotateZ(0) rotateX(0) scale(1);
-		opacity: 1;
-	}
-}
-
-/* Стили для ссылок в меню */
-.nav__menu li a {
-	background: var(--color-primary);
-	box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
-	width: 100%;
-	height: 100%;
-	display: grid;
-	place-items: center;
-}
-
-/* При наведении на ссылки меню */
-.nav__menu li a:hover {
-	background: var(--color-bg2);
-	color: var(--color-white);
-}
-
-/* Медиа-запрос для мобильных устройств */
-@media screen and (max-width: 1024px) {
-	nav button {
-		/* Стили кнопок такие же, как и в общих стилях */
-	}
-
-	nav button#close-menu-btn {
-		display: none; /* Скрыть кнопку закрытия меню */
-	}
-
-	/* ====================== HEADER ===================== */
-	header {
-		height: 52vh;
-		margin-bottom: 4rem;
-	}
-
-	.header__container {
-		gap: 0;
-		padding-bottom: 3rem;
-	}
-
 	/* ====================== CATEGORIES ===================== */
 	.categories {
 		height: auto;
