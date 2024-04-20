@@ -8,7 +8,7 @@
 }
 
 :root {
-	--color-primary: #433eff;
+	--color-primary: #afafba;
 	--color-success: #00bf8e;
 	--color-warning: #f7c94b;
 	--color-danger: #433eff;
@@ -183,7 +183,7 @@ nav {
 .nav-show {
 	top: 0; /* Показываем навигационное меню сверху */
 }
-/* change navbar styles on scroll using javascript */
+
 .window-scroll {
 	background-color: #141414;
 }
@@ -203,16 +203,31 @@ nav button {
 	display: flex;
 	align-items: center;
 	gap: 4rem;
+	position: relative;
 }
 
 .nav__menu a {
 	font-size: 0.9rem;
 	transition: var(--transition);
+	position: relative;
 }
 
-.nav__menu a:hover {
-	color: var(--color-bg2);
+.nav__menu a::before {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	transform: translateX(-50%); /* Центрирование линии относительно ссылки */
+	width: 0;
+	height: 2px;
+	background-color: #433eff;
+	transition: width 0.3s ease;
 }
+
+.nav__menu a:hover::before {
+	width: calc(100% + 40px);
+}
+
 
 /* =================== HEADER ===================== */
 header {
