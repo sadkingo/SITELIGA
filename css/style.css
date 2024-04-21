@@ -355,96 +355,6 @@ header {
 	font-size: 0.9rem;
 }
 
-/* =================== FAQs ===================== */
-.faqs {
-	background: var(--color-bg1);
-	box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-
-.faqs__container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-}
-
-.faq {
-	padding: 2rem;
-	display: flex;
-	align-items: center;
-	gap: 1.4rem;
-	height: fit-content;
-	background: var(--color-primary);
-	cursor: pointer;
-}
-
-.faq h4 {
-	font-size: 1rem;
-	line-height: 2.2;
-}
-
-.faq__icon {
-	align-self: flex-start;
-	font-size: 1.2rem;
-}
-
-.faq p {
-	margin-top: 0.8rem;
-	display: none;
-}
-
-.faq.open p {
-	display: block;
-}
-
-/* =================== TESTIMONIALS ===================== */
-.testimonials__container {
-	overflow-x: hidden;
-	position: relative;
-	margin-bottom: 5rem;
-}
-
-.testimonial {
-	padding-top: 2rem;
-}
-
-.avatar {
-	width: 6rem;
-	height: 6rem;
-	border-radius: 50%;
-	overflow: hidden;
-	margin: 0 auto 1rem;
-	border: 1rem solid var(--color-bg1);
-}
-
-.testimonial__info {
-	text-align: center;
-}
-
-.testimonial__body {
-	background: var(--color-primary);
-	padding: 2rem;
-	margin-top: 3rem;
-	position: relative;
-}
-
-.testimonial__body::before {
-	content: '';
-	display: block;
-	background: linear-gradient(
-		135deg,
-		transparent,
-		var(--color-primary),
-		var(--color-primary),
-		var(--color-primary)
-	);
-	width: 3rem;
-	height: 3rem;
-	position: absolute;
-	left: 50%;
-	top: -1.5rem;
-	transform: rotate(45deg);
-}
-
 /* =================== FOOTER ===================== */
 footer {
 	background: var(--color-bg1);
@@ -585,14 +495,6 @@ h4 {
 	grid-template-columns: 1fr 1fr;
 }
 
-/* ====================== FAQs ===================== */
-.faqs__container {
-	grid-template-columns: 1fr;
-}
-
-.faq {
-	padding: 1.5rem;
-}
 
 /* ====================== FOOTER ===================== */
 .footer__container {
@@ -702,7 +604,7 @@ h4 {
 }
 
 input.check-toggle-round-flat:checked ~ .off {
-	color: #f36f25;
+	color: #433eff;
 }
 
 input.check-toggle-round-flat:checked ~ .on {
@@ -712,7 +614,7 @@ input.check-toggle-round-flat:checked ~ .on {
 .switch > span.on {
 	left: 0;
 	padding-left: 2px;
-	color: #f36f25;
+	color: #433eff;
 }
 
 .switch > span.off {
@@ -816,38 +718,8 @@ input.check-toggle-round-flat:checked + label:after {
 .ouraprouch:hover::after {
 	width: 45%;
 }
-.title_footer {
-	color: #433eff;
-	font-size: 55px;
-	font-weight: 500;
-	margin-top: 50px; /* Опускаем элемент на 30 пикселей вниз */
-	margin-left: 50px;
-	margin-right: 30px;
-	width: 600px;
-}
 
-.title_footer2 {
-	color: #ffffff;
-	font-size: 55px;
-	font-weight: 500;
-	margin-top: 30px; /* Опускаем элемент на 30 пикселей вниз */
-	margin-left: 50px;
-	margin-right: 30px;
-	width: 600px;
-}
-.title_footers {
-	position: absolute;
-	top: 2800px;
-	margin-top: 10px;
-}
 
-@media screen and (max-width: 1440) {
-	.title_footers {
-		position: absolute;
-		top: -400px;
-		margin-top: 10px;
-	}
-}
 
 @media screen and (max-width: 1440) {
 	modal-content {
@@ -875,60 +747,13 @@ input.check-toggle-round-flat:checked + label:after {
 	}
 }
 
-.title_footer3 {
-	color: #ffffff;
-	font-size: 25px;
-	margin-top: 40px; /* Опускаем элемент на 30 пикселей вниз */
-	margin-left: 50px;
-	margin-right: 20px;
-	width: 600px;
-}
 .scrollable {
 	margin-top: 140px;
 }
-/* Добавляем стили для мобильных устройств */
-@media (max-width: 768px) {
-	.title_footer {
-		font-size: 40px;
-		width: auto;
-		margin: 30px 20px;
-	}
 
-	.title_footer2,
-	.title_footer3 {
-		font-size: 30px;
-		width: auto;
-		margin: 20px;
-	}
-}
 body {
 	margin: 0;
 	height: 100vh;
-}
-
-.cursor {
-	width: 40px;
-	height: 40px;
-	border: 1px solid white;
-	border-radius: 50%;
-	position: absolute;
-	transition-duration: 200ms;
-	transition-timing-function: ease-out;
-	animation: cursorAnim 0.5s infinite alternate;
-	pointer-events: none;
-}
-
-.cursor::after {
-	content: '';
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	border: 8px solid gray;
-	border-radius: 50%;
-	opacity: 0.5;
-	top: -8px;
-	left: -8px;
-	animation: cursorAnim2 0.5s infinite alternate;
 }
 
 @keyframes cursorAnim {
@@ -1052,19 +877,6 @@ body::-webkit-scrollbar-track {
 		height: 500px;
 	}
 }
-@media screen and (max-width: 1080) {
-	.title_footers {
-		font-size: 5px;
-		margin-left: 10px;
-		margin-bottom: 100px;
-		margin-top: 0;
-		padding-top: 0;
-	}
-}
-.title_footers {
-	margin-top: 10;
-	padding-top: 0;
-}
 
 @media screen and (max-width: 1080) {
 	.categories {
@@ -1100,7 +912,7 @@ body::-webkit-scrollbar-track {
 		transform: scale(1.2);
 	}
 }
-
+/*============ARROW====================*/
 .pulse {
 	animation-name: pulse;
 	animation-duration: 1s;
