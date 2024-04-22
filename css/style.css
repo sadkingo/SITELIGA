@@ -41,10 +41,12 @@ body {
 	overflow-x: hidden;
 }
 .flexbook-section {
-	margin-top: 500px;
-	height: 60%;
+	margin-top: 20px;
+	height: 100%;
 }
-
+header {
+	height: 100%;
+}
 .header__left {
 	text-align: center;
 	position: relative;
@@ -253,7 +255,7 @@ header {
 /* =================== CATEGORIES ===================== */
 .categories {
 	background: var(--color-bg1);
-	height: 40rem;
+	height: 50%;
 }
 
 .categories h1 {
@@ -1041,16 +1043,16 @@ input[type='tel']:focus {
 }
 .idea_image {
 	width: 150px;
-	position: absolute;
+	position: relative;
 	height: 150px;
 	margin-left: 930px;
 	opacity: 0; /* Установка нулевой прозрачности для начального скрытого состояния */
 	transition: opacity 0.5s ease; /* Плавная анимация изменения прозрачности */
-	top: 830px;
+	top: -250px;
 }
 
 .budget_article {
-	position: absolute;
+	position: relative;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 	text-align: right; /* Выравнивание текста по правому краю */
@@ -1061,12 +1063,12 @@ input[type='tel']:focus {
 	font-size: 25px;
 	margin-left: 1100px;
 	margin-right: 35px;
-	top: 870px;
+	top: -350px;
 }
 @media screen and (max-width: 1080px) {
 	.budget_article,
 	.idea_image {
-		position: absolute;
+		position: relative;;
 		top: 2200px;
 		left: -930px;
 		font-size: 30px;
@@ -1074,16 +1076,16 @@ input[type='tel']:focus {
 }
 .deadline_image {
 	width: 150px;
-	position: absolute;
+	position: relative;;
 	height: 150px;
 	margin-left: 930px;
-	top: 1100px;
+	top: -200px;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 }
 
 .deadline_article {
-	position: absolute;
+	position: relative;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 	text-align: right; /* Выравнивание текста по правому краю */
@@ -1094,7 +1096,7 @@ input[type='tel']:focus {
 	font-size: 25px;
 	margin-left: 1100px;
 	margin-right: 35px;
-	top: 1100px;
+	top: -300px;
 }
 @media screen and (max-width: 1080px) {
 	.deadline_article,
@@ -1107,16 +1109,16 @@ input[type='tel']:focus {
 }
 .launch_image {
 	width: 150px;
-	position: absolute;
+	position: relative;
 	height: 150px;
 	margin-left: 930px;
-	top: 1330px;
+	top: -150px;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 }
 
 .launch_article {
-	position: absolute;
+	position: relative;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 	text-align: right; /* Выравнивание текста по правому краю */
@@ -1127,7 +1129,7 @@ input[type='tel']:focus {
 	font-size: 25px;
 	margin-left: 1125px;
 	margin-right: 35px;
-	top: 1330px;
+	top: -250px;
 }
 @media screen and (max-width: 1080px) {
 	.launch_article,
@@ -1149,16 +1151,16 @@ input[type='tel']:focus {
 }
 .piggy_image {
 	width: 150px;
-	position: absolute;
+	position: relative;
 	height: 150px;
 	margin-left: 930px;
-	top: 1560px;
+	top: -80px;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 }
 
 .piggy_article {
-	position: absolute;
+	position: relative;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 	text-align: right; /* Выравнивание текста по правому краю */
@@ -1169,7 +1171,7 @@ input[type='tel']:focus {
 	font-size: 25px;
 	margin-left: 1100px;
 	margin-right: 35px;
-	top: 1560px;
+	top: -170px;
 }
 
 @media screen and (max-width: 1080px) {
