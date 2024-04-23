@@ -289,9 +289,7 @@ nav button {
   font-size: 20px;
 }
 
-.nav__menu li a:hover {
-  text-decoration: underline;
-}
+
 .modal {
   display: none;
   position: fixed;
