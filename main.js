@@ -140,15 +140,6 @@ document
 		localStorage.setItem('selectedLanguage', language)
 	})
 
-const cursor = document.querySelector('.cursor')
-
-document.addEventListener('mousemove', e => {
-	cursor.setAttribute(
-		'style',
-		'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;'
-	)
-})
-
 document.addEventListener('click', () => {
 	cursor.classList.add('expand')
 
@@ -267,6 +258,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+function toggleMenu() {
+  const modal = document.getElementById("modal");
+  modal.classList.toggle("active");
+  const menuToggle = document.querySelector(".menu-toggle");
+  menuToggle.classList.toggle("menu-open");
+}
 
 
 var translations = {
