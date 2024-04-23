@@ -503,42 +503,16 @@
 
 		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="./main.js"></script>
-
-		<script>
-			// slides for testimonials section
-			var swiper = new Swiper('.mySwiper', {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				// when window width is >= 600px
-				breakpoints: {
-					600: {
-						slidesPerView: 2,
-					},
-				},
-			})
-		</script>
-		<h3
-			data-i18n="go_top"
-			class="go_top"
-			id="scrollToTopBtn2"
-			onclick="scrollToTop()"
-		>
-			Go top
-		</h3>
 		<img
-			src="./images/up-arrow-svgrepo-com.png"
-			onclick="scrollToTop()"
-			id="scrollToTopBtn"
-			title="Go to top"
-			alt="Go to top"
-			style="display: none"
-			class="pulse"
-		/>
-
+		src="./images/arrow-square-up-svgrepo-com (1).svg"
+		onclick="scrollToTop()"
+		id="scrollToTopBtn"
+		title="Go to top"
+		alt="Go to top"
+		style="position: fixed; bottom: -50px; left: 20px; z-index: 9999; display: none;"
+		class="pulse"
+	/>
+	
 		<script src="main.js"></script>
 	</body>
 	<script type="module">
