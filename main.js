@@ -236,10 +236,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('scroll', fadeInElementsOnScroll)
 })
 
+
 document.addEventListener('DOMContentLoaded', function() {
   var ourApproach = document.querySelector('.ouraprouch');
   ourApproach.classList.add('active');
+
+  window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition === 0) {
+      ourApproach.classList.remove('active');
+      setTimeout(function() {
+        ourApproach.classList.add('active');
+      }, 600); // Задержка для того, чтобы класс удален был воспринят и анимация началась заново
+    }
+  });
 });
+
 
 var translations = {
 	home: {
