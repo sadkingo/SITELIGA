@@ -44,6 +44,7 @@ body {
 	margin-top: 20px;
 	height: 100%;
 }
+
 header {
 	height: 100%;
 }
@@ -283,39 +284,6 @@ header {
 	gap: 1.2rem;
 }
 
-.category {
-	background: var(--color-bg2);
-	padding: 2rem;
-	border-radius: 2rem;
-	transition: var(--transition);
-}
-
-.category:hover {
-	box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-	z-index: 1;
-}
-
-.category:nth-child(2) .category__icon {
-	background: var(--color-danger);
-}
-
-.category:nth-child(3) .category__icon {
-	background: var(--color-success);
-}
-
-.category:nth-child(4) .category__icon {
-	background: var(--color-warning);
-}
-
-.category:nth-child(5) .category__icon {
-	background: var(--color-success);
-}
-
-.category__icon {
-	background: var(--color-primary);
-	padding: 0.7rem;
-	border-radius: 0.9rem;
-}
 
 .category h5 {
 	margin: 2rem 0 1rem;
@@ -707,19 +675,20 @@ input.check-toggle-round-flat:checked + label:after {
 	font-size: 10px; /* Размер шрифта */
 }
 .ouraprouch::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -20px;
-	width: 0;
-	height: 10px;
-	background-color: #433eff;
-	transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 0;
+  height: 10px;
+  background-color: #433eff;
+  transition: width 0.7s ease;
 }
 
-.ouraprouch:hover::after {
-	width: 45%;
+.ouraprouch.active::after {
+  width: 45%;
 }
+
 
 
 
