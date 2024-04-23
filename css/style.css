@@ -592,6 +592,13 @@ input.check-toggle-round-flat:checked ~ .on {
 	padding-right: 4px;
 	color: #fff;
 }
+#scrollToTopBtn {
+  display: block;
+}
+#scrollToTopBtn {
+  transition: bottom 0.3s ease; /* Добавляем плавный переход */
+}
+
 
 .check-toggle {
 	position: absolute;
@@ -644,7 +651,7 @@ input.check-toggle-round-flat + label:after {
 	top: 4px;
 	left: 4px;
 	bottom: 4px;
-	width: 48px;
+	width: 45px;
 	background-color: #fff;
 	-webkit-border-radius: 52px;
 	-moz-border-radius: 52px;
@@ -688,8 +695,6 @@ input.check-toggle-round-flat:checked + label:after {
 .ouraprouch.active::after {
   width: 45%;
 }
-
-
 
 
 @media screen and (max-width: 1440) {
