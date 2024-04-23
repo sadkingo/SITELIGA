@@ -251,6 +251,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  var windowHeight = window.innerHeight;
+  var contentHeight = document.body.scrollHeight;
+
+  window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > (contentHeight - windowHeight) / 2) {
+      scrollToTopBtn.style.bottom = '20px'; // Показываем кнопку при достижении середины содержимого страницы
+      scrollToTopBtn.style.display = 'block'; // Показываем кнопку
+    } else {
+      scrollToTopBtn.style.bottom = '-50px'; // Скрываем кнопку при прокрутке обратно к верху страницы
+      scrollToTopBtn.style.display = 'none'; // Скрываем кнопку
+    }
+  });
+});
 
 
 var translations = {
