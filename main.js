@@ -236,6 +236,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('scroll', fadeInElementsOnScroll)
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+  var ourApproach = document.querySelector('.ouraprouch');
+  ourApproach.classList.add('active');
+});
+
 var translations = {
 	home: {
 		en: 'Home',
